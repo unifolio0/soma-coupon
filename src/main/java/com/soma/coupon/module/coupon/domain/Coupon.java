@@ -31,4 +31,16 @@ public class Coupon {
         this.couponType = couponType;
         this.expireTime = expireTime;
     }
+
+    public boolean isExpired() {
+        return expireTime.isBefore(LocalDateTime.now());
+    }
+
+    public boolean issuable() {
+        return count > 0;
+    }
+
+    public void decrease() {
+        count--;
+    }
 }
