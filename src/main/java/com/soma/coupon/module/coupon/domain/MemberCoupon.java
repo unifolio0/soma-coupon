@@ -1,6 +1,6 @@
 package com.soma.coupon.module.coupon.domain;
 
-import com.soma.coupon.module.user.domain.User;
+import com.soma.coupon.module.user.domain.Member;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -13,15 +13,15 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @NoArgsConstructor
-public class UserCoupon {
+public class MemberCoupon {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
-    private User user;
+    @JoinColumn(name = "member_id")
+    private Member member;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "coupon_id")
@@ -30,8 +30,8 @@ public class UserCoupon {
     private Boolean used;
     private LocalDateTime usedAt;
 
-    public UserCoupon(User user, Coupon coupon) {
-        this.user = user;
+    public MemberCoupon(Member member, Coupon coupon) {
+        this.member = member;
         this.coupon = coupon;
         this.used = false;
         this.usedAt = LocalDateTime.now();

@@ -6,11 +6,9 @@ spring:
       host: localhost
       port: 6379
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/sys
+    url: jdbc:mysql://localhost:3306/soma
     username: root
     password:
-jpa:
-  database-platform: org.hibernate.dialect.MySQL8Dialect
-  hibernate:
-    ddl-auto: create
+  sql:
+    init:
+      mode: always
