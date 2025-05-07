@@ -1,7 +1,7 @@
 package com.soma.coupon.module.coupon.controller;
 
 import com.soma.coupon.module.coupon.domain.Coupon;
-import com.soma.coupon.module.coupon.domain.UserCoupon;
+import com.soma.coupon.module.coupon.domain.MemberCoupon;
 import com.soma.coupon.module.coupon.dto.IssueCouponRequest;
 import com.soma.coupon.module.coupon.service.CouponService;
 import java.util.List;
@@ -20,7 +20,7 @@ public class CouponController {
     private final CouponService couponService;
 
     @PostMapping("api/coupon/issue")
-    public UserCoupon issueCoupon(@RequestBody IssueCouponRequest request) {
+    public MemberCoupon issueCoupon(@RequestBody IssueCouponRequest request) {
         return couponService.issue(request);
     }
 
@@ -30,12 +30,12 @@ public class CouponController {
     }
 
     @GetMapping("api/coupon/{userId}")
-    public List<UserCoupon> getCoupons(@PathVariable Long userId) {
+    public List<MemberCoupon> getCoupons(@PathVariable Long userId) {
         return couponService.getUserCoupons(userId);
     }
 
     @PatchMapping("api/coupon/used/{id}")
-    public UserCoupon useCoupon(@PathVariable Long id) {
+    public MemberCoupon useCoupon(@PathVariable Long id) {
         return couponService.used(id);
     }
 }
