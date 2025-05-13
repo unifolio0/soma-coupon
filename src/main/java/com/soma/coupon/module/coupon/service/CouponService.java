@@ -46,7 +46,7 @@ public class CouponService {
     }
 
     public MemberCoupon use(UseCouponRequest request) {
-        String lockName = request + ":lock";
+        String lockName = "couponId:" + request.memberCouponId() + "memberId:" + request.memberId() + ":lock";
         RLock lock = redissonClient.getLock(lockName);
         lock.lock();
         try {
