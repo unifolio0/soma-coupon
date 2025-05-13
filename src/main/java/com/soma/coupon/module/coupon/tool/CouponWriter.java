@@ -29,7 +29,7 @@ public class CouponWriter {
         if (memberCouponRepository.existsByCouponIdAndMemberId(request.couponId(), request.userId())) {
             throw new IllegalArgumentException("이미 발급받은 쿠폰입니다");
         }
-        Coupon coupon = couponRepository.findById(request.couponId()).orElseThrow();
+        Coupon coupon = couponRepository.findByIdForUpdate(request.couponId()).orElseThrow();
         if (!coupon.issuable() || coupon.isExpired()) {
             throw new IllegalArgumentException("모두 소진된 쿠폰입니다.");
         }
@@ -49,7 +49,7 @@ public class CouponWriter {
 
     @Transactional
     public MemberCoupon used(Long memberCouponId, Long memberId) {
-        MemberCoupon memberCoupon = memberCouponRepository.findById(memberCouponId).orElseThrow();
+        MemberCoupon memberCoupon = memberCouponRepository.findByIdForUpdate(memberCouponId).orElseThrow();
         if (!memberCoupon.getMember().getId().equals(memberId)) {
             throw new IllegalArgumentException("쿠폰을 발급받은 회원이 아닙니다.");
         }

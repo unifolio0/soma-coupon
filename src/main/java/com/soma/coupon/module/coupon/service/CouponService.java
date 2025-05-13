@@ -8,7 +8,6 @@ import com.soma.coupon.module.coupon.dto.UseCouponRequest;
 import com.soma.coupon.module.coupon.tool.CouponWriter;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
-import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.stereotype.Service;
 
@@ -25,14 +24,7 @@ public class CouponService {
     }
 
     public MemberCoupon issue(IssueCouponRequest request) {
-        String lockName = request.couponId() + ":lock";
-        RLock lock = redissonClient.getLock(lockName);
-        lock.lock();
-        try {
-            return couponWriter.issue(request);
-        } finally {
-            lock.unlock();
-        }
+        return couponWriter.issue(request);
     }
 
     public List<MemberCoupon> getUserCoupons(Long userId) {
@@ -46,13 +38,6 @@ public class CouponService {
     }
 
     public MemberCoupon use(UseCouponRequest request) {
-        String lockName = "couponId:" + request.memberCouponId() + "memberId:" + request.memberId() + ":lock";
-        RLock lock = redissonClient.getLock(lockName);
-        lock.lock();
-        try {
-            return couponWriter.used(request.memberCouponId(), request.memberId());
-        } finally {
-            lock.unlock();
-        }
+        return couponWriter.used(request.memberCouponId(), request.memberId());
     }
 }
