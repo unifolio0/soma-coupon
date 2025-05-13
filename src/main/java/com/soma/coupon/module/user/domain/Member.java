@@ -24,4 +24,10 @@ public class Member {
 
     @Enumerated(value = EnumType.STRING)
     private Role role;
+
+    public Member(String name, String password, Role role) {
+        this.name = name;
+        this.password = password;
+        this.role = role;
+    }
 }
