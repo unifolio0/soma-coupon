@@ -36,6 +36,6 @@ public class CouponController {
 
     @PatchMapping("api/coupon/used/{id}")
     public MemberCoupon useCoupon(@PathVariable Long id) {
-        return couponService.used(id);
+        return couponService.use(id);
     }
 }

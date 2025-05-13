@@ -1,0 +1,59 @@
+package com.soma.coupon.module.coupon.tool;
+
+import com.soma.coupon.module.coupon.domain.Coupon;
+import com.soma.coupon.module.coupon.domain.MemberCoupon;
+import com.soma.coupon.module.coupon.dto.IssueCouponRequest;
+import com.soma.coupon.module.coupon.repository.CouponRepository;
+import com.soma.coupon.module.coupon.repository.MemberCouponRepository;
+import com.soma.coupon.module.user.domain.Member;
+import com.soma.coupon.module.user.repository.MemberRepository;
+import java.util.List;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+@Service
+@RequiredArgsConstructor
+public class CouponWriter {
+
+    private final CouponRepository couponRepository;
+    private final MemberCouponRepository memberCouponRepository;
+    private final MemberRepository memberRepository;
+
+    public Coupon create(Coupon coupon) {
+        return couponRepository.save(coupon);
+    }
+
+    @Transactional
+    public MemberCoupon issue(IssueCouponRequest request) {
+        if (memberCouponRepository.existsByCouponIdAndMemberId(request.couponId(), request.userId())) {
+            throw new IllegalArgumentException("이미 발급받은 쿠폰입니다");
+        }
+        Coupon coupon = couponRepository.findById(request.couponId()).orElseThrow();
+        if (!coupon.issuable() || coupon.isExpired()) {
+            throw new IllegalArgumentException("모두 소진된 쿠폰입니다.");
+        }
+        coupon.decrease();
+        Member member = memberRepository.findById(request.userId()).orElseThrow();
+        MemberCoupon memberCoupon = new MemberCoupon(member, coupon);
+        return memberCouponRepository.save(memberCoupon);
+    }
+
+    public List<MemberCoupon> getUserCoupons(Long userId) {
+        return memberCouponRepository.findByMemberId(userId);
+    }
+
+    public List<Coupon> getCoupons() {
+        return couponRepository.findAll();
+    }
+
+    @Transactional
+    public MemberCoupon used(Long id) {
+        MemberCoupon memberCoupon = memberCouponRepository.findById(id).orElseThrow();
+        if (!memberCoupon.usable()) {
+            throw new IllegalArgumentException();
+        }
+        memberCoupon.use();
+        return memberCoupon;
+    }
+}
