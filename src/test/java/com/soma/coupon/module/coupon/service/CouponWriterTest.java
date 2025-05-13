@@ -1,7 +1,6 @@
 package com.soma.coupon.module.coupon.service;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import com.soma.coupon.module.coupon.domain.Coupon;
 import com.soma.coupon.module.coupon.domain.CouponType;
@@ -41,13 +40,13 @@ class CouponWriterTest {
     @DisplayName("여러 명의 회원이 쿠폰 발급을 동시에 신청해도, 발급 갯수만큼만 발급되어야 한다.")
     void createMemberCouponByManyUsers() throws InterruptedException {
         List<Member> members = new ArrayList<>();
-        int memberCount = 100;
-        long couponCount = 10;
+        int memberCount = 1000;
+        long couponCount = 100;
         for (int i = 0; i < memberCount; i++) {
             Member member = memberRepository.save(new Member("member" + i, "pw", Role.MEMBER));
             members.add(member);
         }
-        Coupon coupon = new Coupon("vhjvj", couponCount, CouponType.CHICKEN, LocalDateTime.now().plusDays(1));
+        Coupon coupon = new Coupon("치킨 쿠폰", couponCount, CouponType.CHICKEN, LocalDateTime.now().plusDays(1));
         couponRepository.save(coupon);
 
         ExecutorService executor = Executors.newFixedThreadPool(memberCount);
@@ -73,31 +72,29 @@ class CouponWriterTest {
 
         latch.await();
         exceptions.forEach(e -> System.out.println(e.getMessage()));
+        Coupon usedCoupon = couponRepository.findById(coupon.getId()).orElseThrow();
 
-        Coupon usedCoupon = couponRepository.findById(coupon.getId()).get();
-        assertEquals(memberCount - couponCount, exceptions.size(), "100개 성공, 900개 실패");
-        assertEquals(usedCoupon.getCount(), 0, "쿠폰은 모두 소진되어 0개 남음");
-        assertTrue(exceptions.stream().allMatch(e -> e.getMessage().equals("모두 소진된 쿠폰입니다.")), "모든 예외는 쿠폰 소진에 의해 발생");
+        assertThat(exceptions).hasSize((int) (memberCount - couponCount));
+        assertThat(usedCoupon.getCount()).isZero();
+        assertThat(exceptions).allMatch(e -> e.getMessage().equals("모두 소진된 쿠폰입니다."));
     }
 
     @Test
     @DisplayName("회원이 자신의 쿠폰을 동시에 여러 번 사용하려고 시도하면 예외가 발생한다.")
     void useMemberCouponConcurrently() throws InterruptedException {
-        // given
         Member member = new Member("member", "pw", Role.MEMBER);
         memberRepository.save(member);
-        Coupon coupon = new Coupon("vhjvj", 10L, CouponType.CHICKEN, LocalDateTime.now().plusDays(1));
+        Coupon coupon = new Coupon("치킨 쿠폰", 10L, CouponType.CHICKEN, LocalDateTime.now().plusDays(1));
         couponRepository.save(coupon);
         MemberCoupon memberCoupon = new MemberCoupon(member, coupon);
         memberCouponRepository.save(memberCoupon);
 
-        int threadCount = 5;
+        int threadCount = 1000;
         ExecutorService executor = Executors.newFixedThreadPool(threadCount);
         CountDownLatch latch = new CountDownLatch(threadCount);
 
         List<Exception> exceptions = Collections.synchronizedList(new ArrayList<>());
 
-        // when
         for (int i = 0; i < threadCount; i++) {
             executor.submit(() -> {
                 try {
@@ -112,9 +109,6 @@ class CouponWriterTest {
 
         latch.await();
 
-        // then
-        assertEquals(threadCount - 1, exceptions.size(), "1개 성공, 나머지는 실패해야 함");
-        assertTrue(exceptions.stream().allMatch(IllegalArgumentException.class::isInstance
-        ), "모든 실패는 IllegalArgumentException 이어야 함");
+        assertThat(exceptions).hasSize(threadCount - 1).allMatch(IllegalArgumentException.class::isInstance);
     }
 }

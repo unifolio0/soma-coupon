@@ -6,7 +6,6 @@ import com.soma.coupon.module.coupon.domain.MemberCoupon;
 import com.soma.coupon.module.coupon.dto.IssueCouponRequest;
 import com.soma.coupon.module.coupon.tool.CouponWriter;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import lombok.RequiredArgsConstructor;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
@@ -27,20 +26,11 @@ public class CouponService {
     public MemberCoupon issue(IssueCouponRequest request) {
         String lockName = request.couponId() + ":lock";
         RLock lock = redissonClient.getLock(lockName);
-        boolean locked = false;
+        lock.lock();
         try {
-            locked = lock.tryLock(3, TimeUnit.SECONDS);
-            if (!locked) {
-                throw new IllegalArgumentException("락 획득 실패");
-            }
             return couponWriter.issue(request);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-            throw new IllegalArgumentException(e.getMessage());
         } finally {
-            if (locked && lock.isHeldByCurrentThread()) {
-                lock.unlock();
-            }
+            lock.unlock();
         }
     }
 
@@ -57,20 +47,11 @@ public class CouponService {
     public MemberCoupon use(Long id) {
         String lockName = id + ":lock";
         RLock lock = redissonClient.getLock(lockName);
-        boolean locked = false;
+        lock.lock();
         try {
-            locked = lock.tryLock(3, TimeUnit.SECONDS);
-            if (!locked) {
-                throw new IllegalArgumentException("락 획득 실패");
-            }
             return couponWriter.used(id);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-            throw new IllegalArgumentException(e.getMessage());
         } finally {
-            if (locked && lock.isHeldByCurrentThread()) {
-                lock.unlock();
-            }
+            lock.unlock();
         }
     }
 }
