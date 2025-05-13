@@ -58,21 +58,17 @@ class CouponServiceTest {
         for (int i = 0; i < memberCount; i++) {
             Member member = members.get(i);
             executor.submit(() -> {
-                long start = System.currentTimeMillis();
                 try {
                     couponService.issue(new IssueCouponRequest(member.getId(), coupon.getId()));
                 } catch (Exception e) {
                     exceptions.add(e);
                 } finally {
-                    long end = System.currentTimeMillis();
-                    System.out.printf("Thread for member %d took %d ms%n", member.getId(), (end - start));
                     latch.countDown();
                 }
             });
         }
 
         latch.await();
-        exceptions.forEach(e -> System.out.println(e.getMessage()));
         Coupon usedCoupon = couponRepository.findById(coupon.getId()).orElseThrow();
 
         assertThat(exceptions).hasSize((int) (memberCount - couponCount));
