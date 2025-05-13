@@ -48,10 +48,13 @@ public class CouponWriter {
     }
 
     @Transactional
-    public MemberCoupon used(Long id) {
-        MemberCoupon memberCoupon = memberCouponRepository.findById(id).orElseThrow();
+    public MemberCoupon used(Long memberCouponId, Long memberId) {
+        MemberCoupon memberCoupon = memberCouponRepository.findById(memberCouponId).orElseThrow();
+        if (!memberCoupon.getMember().getId().equals(memberId)) {
+            throw new IllegalArgumentException("쿠폰을 발급받은 회원이 아닙니다.");
+        }
         if (!memberCoupon.usable()) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("쿠폰을 사용할 수 없습니다.");
         }
         memberCoupon.use();
         return memberCoupon;

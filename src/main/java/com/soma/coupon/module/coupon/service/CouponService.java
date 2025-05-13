@@ -4,6 +4,7 @@ import com.soma.coupon.module.admin.dto.CreateCouponRequest;
 import com.soma.coupon.module.coupon.domain.Coupon;
 import com.soma.coupon.module.coupon.domain.MemberCoupon;
 import com.soma.coupon.module.coupon.dto.IssueCouponRequest;
+import com.soma.coupon.module.coupon.dto.UseCouponRequest;
 import com.soma.coupon.module.coupon.tool.CouponWriter;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -44,12 +45,12 @@ public class CouponService {
                 .toList();
     }
 
-    public MemberCoupon use(Long id) {
-        String lockName = id + ":lock";
+    public MemberCoupon use(UseCouponRequest request) {
+        String lockName = request + ":lock";
         RLock lock = redissonClient.getLock(lockName);
         lock.lock();
         try {
-            return couponWriter.used(id);
+            return couponWriter.used(request.memberCouponId(), request.memberId());
         } finally {
             lock.unlock();
         }

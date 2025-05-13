@@ -6,6 +6,7 @@ import com.soma.coupon.module.coupon.domain.Coupon;
 import com.soma.coupon.module.coupon.domain.CouponType;
 import com.soma.coupon.module.coupon.domain.MemberCoupon;
 import com.soma.coupon.module.coupon.dto.IssueCouponRequest;
+import com.soma.coupon.module.coupon.dto.UseCouponRequest;
 import com.soma.coupon.module.coupon.repository.CouponRepository;
 import com.soma.coupon.module.coupon.repository.MemberCouponRepository;
 import com.soma.coupon.module.user.domain.Member;
@@ -25,7 +26,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 
 @SpringBootTest(webEnvironment = WebEnvironment.NONE)
-class CouponWriterTest {
+class CouponServiceTest {
 
     @Autowired
     private MemberRepository memberRepository;
@@ -98,7 +99,7 @@ class CouponWriterTest {
         for (int i = 0; i < threadCount; i++) {
             executor.submit(() -> {
                 try {
-                    couponService.use(memberCoupon.getId());
+                    couponService.use(new UseCouponRequest(memberCoupon.getId(), member.getId()));
                 } catch (Exception e) {
                     exceptions.add(e);
                 } finally {

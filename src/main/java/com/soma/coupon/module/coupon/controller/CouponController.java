@@ -3,6 +3,7 @@ package com.soma.coupon.module.coupon.controller;
 import com.soma.coupon.module.coupon.domain.Coupon;
 import com.soma.coupon.module.coupon.domain.MemberCoupon;
 import com.soma.coupon.module.coupon.dto.IssueCouponRequest;
+import com.soma.coupon.module.coupon.dto.UseCouponRequest;
 import com.soma.coupon.module.coupon.service.CouponService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -34,8 +35,8 @@ public class CouponController {
         return couponService.getUserCoupons(userId);
     }
 
-    @PatchMapping("api/coupon/used/{id}")
-    public MemberCoupon useCoupon(@PathVariable Long id) {
-        return couponService.use(id);
+    @PatchMapping("api/coupon/used")
+    public MemberCoupon useCoupon(@RequestBody UseCouponRequest request) {
+        return couponService.use(request);
     }
 }
