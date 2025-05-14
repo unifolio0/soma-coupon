@@ -24,6 +24,10 @@ public class CouponService {
         return couponWriter.create(coupon);
     }
 
+    public MemberCoupon issueForXLock(IssueCouponRequest request) {
+        return couponWriter.issueForXLock(request);
+    }
+
     public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
         String lockName = request.couponId() + ":lock";
         RLock lock = redissonClient.getLock(lockName);
@@ -43,6 +47,10 @@ public class CouponService {
         return couponWriter.getCoupons().stream()
                 .filter(coupon -> !coupon.isExpired())
                 .toList();
+    }
+
+    public MemberCoupon useForXLock(UseCouponRequest request) {
+        return couponWriter.usedForXLock(request.memberCouponId(), request.memberId());
     }
 
     public MemberCoupon useForRedisLock(UseCouponRequest request) {
