@@ -20,9 +20,24 @@ public class CouponController {
 
     private final CouponService couponService;
 
-    @PostMapping("api/coupon/issue")
-    public MemberCoupon issueCoupon(@RequestBody IssueCouponRequest request) {
+    @PostMapping("api/coupon/issue/redis")
+    public MemberCoupon issueCouponForRedis(@RequestBody IssueCouponRequest request) {
         return couponService.issueForRedisLock(request);
+    }
+
+    @PatchMapping("api/coupon/used/redis")
+    public MemberCoupon useCouponForRedis(@RequestBody UseCouponRequest request) {
+        return couponService.useForRedisLock(request);
+    }
+
+    @PostMapping("api/coupon/issue/xlock")
+    public MemberCoupon issueCouponForXLock(@RequestBody IssueCouponRequest request) {
+        return couponService.issueForXLock(request);
+    }
+
+    @PatchMapping("api/coupon/used/xlock")
+    public MemberCoupon useCouponForXLock(@RequestBody UseCouponRequest request) {
+        return couponService.useForXLock(request);
     }
 
     @GetMapping("api/coupon")
@@ -33,10 +48,5 @@ public class CouponController {
     @GetMapping("api/coupon/{userId}")
     public List<MemberCoupon> getCoupons(@PathVariable Long userId) {
         return couponService.getUserCoupons(userId);
-    }
-
-    @PatchMapping("api/coupon/used")
-    public MemberCoupon useCoupon(@RequestBody UseCouponRequest request) {
-        return couponService.useForRedisLock(request);
     }
 }

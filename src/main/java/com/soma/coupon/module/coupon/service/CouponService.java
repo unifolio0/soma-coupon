@@ -8,6 +8,7 @@ import com.soma.coupon.module.coupon.dto.UseCouponRequest;
 import com.soma.coupon.module.coupon.tool.CouponWriter;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.stereotype.Service;
 
@@ -22,11 +23,11 @@ public class CouponService {
         Coupon coupon = request.toDomain();
         return couponWriter.create(coupon);
     }
-  
+
     public MemberCoupon issueForXLock(IssueCouponRequest request) {
         return couponWriter.issueForXLock(request);
     }
-  
+
     public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
         String lockName = request.couponId() + ":lock";
         RLock lock = redissonClient.getLock(lockName);
