@@ -22,9 +22,20 @@ public class CouponService {
         Coupon coupon = request.toDomain();
         return couponWriter.create(coupon);
     }
-
-    public MemberCoupon issue(IssueCouponRequest request) {
-        return couponWriter.issue(request);
+  
+    public MemberCoupon issueForXLock(IssueCouponRequest request) {
+        return couponWriter.issueForXLock(request);
+    }
+  
+    public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
+        String lockName = request.couponId() + ":lock";
+        RLock lock = redissonClient.getLock(lockName);
+        lock.lock();
+        try {
+            return couponWriter.issueForRedisLock(request);
+        } finally {
+            lock.unlock();
+        }
     }
 
     public List<MemberCoupon> getUserCoupons(Long userId) {
@@ -37,7 +48,18 @@ public class CouponService {
                 .toList();
     }
 
-    public MemberCoupon use(UseCouponRequest request) {
-        return couponWriter.used(request.memberCouponId(), request.memberId());
+    public MemberCoupon useForXLock(UseCouponRequest request) {
+        return couponWriter.usedForXLock(request.memberCouponId(), request.memberId());
+    }
+
+    public MemberCoupon useForRedisLock(UseCouponRequest request) {
+        String lockName = "couponId:" + request.memberCouponId() + "memberId:" + request.memberId() + ":lock";
+        RLock lock = redissonClient.getLock(lockName);
+        lock.lock();
+        try {
+            return couponWriter.usedForRedisLock(request.memberCouponId(), request.memberId());
+        } finally {
+            lock.unlock();
+        }
     }
 }
