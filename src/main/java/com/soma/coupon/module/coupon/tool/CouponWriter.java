@@ -25,7 +25,7 @@ public class CouponWriter {
     }
 
     @Transactional
-    public MemberCoupon issue(IssueCouponRequest request) {
+    public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
         if (memberCouponRepository.existsByCouponIdAndMemberId(request.couponId(), request.userId())) {
             throw new IllegalArgumentException("이미 발급받은 쿠폰입니다");
         }
@@ -48,7 +48,7 @@ public class CouponWriter {
     }
 
     @Transactional
-    public MemberCoupon used(Long memberCouponId, Long memberId) {
+    public MemberCoupon usedForRedisLock(Long memberCouponId, Long memberId) {
         MemberCoupon memberCoupon = memberCouponRepository.findById(memberCouponId).orElseThrow();
         if (!memberCoupon.getMember().getId().equals(memberId)) {
             throw new IllegalArgumentException("쿠폰을 발급받은 회원이 아닙니다.");

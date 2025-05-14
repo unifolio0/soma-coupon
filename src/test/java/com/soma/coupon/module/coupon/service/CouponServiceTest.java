@@ -39,7 +39,7 @@ class CouponServiceTest {
 
     @Test
     @DisplayName("여러 명의 회원이 쿠폰 발급을 동시에 신청해도, 발급 갯수만큼만 발급되어야 한다.")
-    void createMemberCouponByManyUsers() throws InterruptedException {
+    void createMemberCouponForRedisLockByManyUsers() throws InterruptedException {
         List<Member> members = new ArrayList<>();
         int memberCount = 1000;
         long couponCount = 100;
@@ -59,7 +59,7 @@ class CouponServiceTest {
             Member member = members.get(i);
             executor.submit(() -> {
                 try {
-                    couponService.issue(new IssueCouponRequest(member.getId(), coupon.getId()));
+                    couponService.issueForRedisLock(new IssueCouponRequest(member.getId(), coupon.getId()));
                 } catch (Exception e) {
                     exceptions.add(e);
                 } finally {
@@ -78,7 +78,7 @@ class CouponServiceTest {
 
     @Test
     @DisplayName("회원이 자신의 쿠폰을 동시에 여러 번 사용하려고 시도하면 예외가 발생한다.")
-    void useMemberCouponConcurrently() throws InterruptedException {
+    void useForRedisLockMemberCouponConcurrently() throws InterruptedException {
         Member member = new Member("member", "pw", Role.MEMBER);
         memberRepository.save(member);
         Coupon coupon = new Coupon("치킨 쿠폰", 10L, CouponType.CHICKEN, LocalDateTime.now().plusDays(1));
@@ -95,7 +95,7 @@ class CouponServiceTest {
         for (int i = 0; i < threadCount; i++) {
             executor.submit(() -> {
                 try {
-                    couponService.use(new UseCouponRequest(memberCoupon.getId(), member.getId()));
+                    couponService.useForRedisLock(new UseCouponRequest(memberCoupon.getId(), member.getId()));
                 } catch (Exception e) {
                     exceptions.add(e);
                 } finally {
