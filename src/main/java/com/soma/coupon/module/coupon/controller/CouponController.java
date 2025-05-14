@@ -22,7 +22,7 @@ public class CouponController {
 
     @PostMapping("api/coupon/issue")
     public MemberCoupon issueCoupon(@RequestBody IssueCouponRequest request) {
-        return couponService.issue(request);
+        return couponService.issueForRedisLock(request);
     }
 
     @GetMapping("api/coupon")
@@ -37,6 +37,6 @@ public class CouponController {
 
     @PatchMapping("api/coupon/used")
     public MemberCoupon useCoupon(@RequestBody UseCouponRequest request) {
-        return couponService.use(request);
+        return couponService.useForRedisLock(request);
     }
 }
