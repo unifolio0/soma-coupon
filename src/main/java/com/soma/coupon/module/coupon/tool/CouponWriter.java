@@ -23,30 +23,31 @@ public class CouponWriter {
     public Coupon create(Coupon coupon) {
         return couponRepository.save(coupon);
     }
-  
+
     @Transactional
     public MemberCoupon issueForXLock(IssueCouponRequest request) {
         if (memberCouponRepository.existsByCouponIdAndMemberId(request.couponId(), request.userId())) {
             throw new IllegalArgumentException("이미 발급받은 쿠폰입니다");
         }
-        Coupon coupon = couponRepository.findById(request.couponId()).orElseThrow();
-        if (!coupon.issuable() || coupon.isExpired()) {
-            throw new IllegalArgumentException("모두 소진된 쿠폰입니다.");
-        }
-        coupon.decrease();
-        Member member = memberRepository.findById(request.userId()).orElseThrow();
-        MemberCoupon memberCoupon = new MemberCoupon(member, coupon);
-        return memberCouponRepository.save(memberCoupon);
-    }  
+        Coupon coupon = couponRepository.findByIdForUpdate(request.couponId()).orElseThrow();
+        return issueCoupon(request, coupon);
+    }
 
     @Transactional
     public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
         if (memberCouponRepository.existsByCouponIdAndMemberId(request.couponId(), request.userId())) {
             throw new IllegalArgumentException("이미 발급받은 쿠폰입니다");
         }
-        Coupon coupon = couponRepository.findByIdForUpdate(request.couponId()).orElseThrow();
-        if (!coupon.issuable() || coupon.isExpired()) {
+        Coupon coupon = couponRepository.findById(request.couponId()).orElseThrow();
+        return issueCoupon(request, coupon);
+    }
+
+    private MemberCoupon issueCoupon(IssueCouponRequest request, Coupon coupon) {
+        if (!coupon.issuable()) {
             throw new IllegalArgumentException("모두 소진된 쿠폰입니다.");
+        }
+        if (coupon.isExpired()) {
+            throw new IllegalArgumentException("쿠폰이 만료되었습니다.");
         }
         coupon.decrease();
         Member member = memberRepository.findById(request.userId()).orElseThrow();
@@ -65,7 +66,7 @@ public class CouponWriter {
     @Transactional
     public MemberCoupon usedForXLock(Long memberCouponId, Long memberId) {
         MemberCoupon memberCoupon = memberCouponRepository.findByIdForUpdate(memberCouponId).orElseThrow();
-        if (!memberCoupon.getMember().getId().equals(memberId)) {
+        if (!memberCoupon.isOwner(memberId)) {
             throw new IllegalArgumentException("쿠폰을 발급받은 회원이 아닙니다.");
         }
         if (!memberCoupon.usable()) {
@@ -74,11 +75,11 @@ public class CouponWriter {
         memberCoupon.use();
         return memberCoupon;
     }
-  
+
     @Transactional
     public MemberCoupon usedForRedisLock(Long memberCouponId, Long memberId) {
         MemberCoupon memberCoupon = memberCouponRepository.findById(memberCouponId).orElseThrow();
-        if (!memberCoupon.getMember().getId().equals(memberId)) {
+        if (!memberCoupon.isOwner(memberId)) {
             throw new IllegalArgumentException("쿠폰을 발급받은 회원이 아닙니다.");
         }
         if (!memberCoupon.usable()) {

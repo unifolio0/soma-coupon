@@ -8,7 +8,6 @@ import com.soma.coupon.module.coupon.service.CouponService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -25,7 +24,7 @@ public class CouponController {
         return couponService.issueForRedisLock(request);
     }
 
-    @PatchMapping("api/coupon/used/redis")
+    @PostMapping("api/coupon/used/redis")
     public MemberCoupon useCouponForRedis(@RequestBody UseCouponRequest request) {
         return couponService.useForRedisLock(request);
     }
@@ -35,7 +34,7 @@ public class CouponController {
         return couponService.issueForXLock(request);
     }
 
-    @PatchMapping("api/coupon/used/xlock")
+    @PostMapping("api/coupon/used/xlock")
     public MemberCoupon useCouponForXLock(@RequestBody UseCouponRequest request) {
         return couponService.useForXLock(request);
     }

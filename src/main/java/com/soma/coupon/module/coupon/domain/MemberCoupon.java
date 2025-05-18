@@ -47,4 +47,8 @@ public class MemberCoupon {
         used = true;
         usedAt = LocalDateTime.now();
     }
+
+    public boolean isOwner(Long memberId) {
+        return member.getId().equals(memberId);
+    }
 }
