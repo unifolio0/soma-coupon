@@ -9,10 +9,10 @@ import com.soma.coupon.module.user.domain.Member;
 import com.soma.coupon.module.user.repository.MemberRepository;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-@Service
+@Component
 @RequiredArgsConstructor
 public class CouponWriter {
 
