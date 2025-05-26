@@ -9,9 +9,11 @@ import com.soma.coupon.module.user.domain.Member;
 import com.soma.coupon.module.user.repository.MemberRepository;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+@Slf4j
 @Component
 @RequiredArgsConstructor
 public class CouponWriter {
@@ -26,19 +28,24 @@ public class CouponWriter {
 
     @Transactional
     public MemberCoupon issueForXLock(IssueCouponRequest request) {
+        log.info("쿠폰 발급 내역 조회 memberId: {}", request.userId());
         if (memberCouponRepository.existsByCouponIdAndMemberId(request.couponId(), request.userId())) {
             throw new IllegalArgumentException("이미 발급받은 쿠폰입니다");
         }
+        log.info("x lock 획득 시도 memberId: {}", request.userId());
         Coupon coupon = couponRepository.findByIdForUpdate(request.couponId()).orElseThrow();
+        log.info("x lock 획득 memberId: {}", request.userId());
         return issueCoupon(request, coupon);
     }
 
     @Transactional
     public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
+        log.info("쿠폰 발급 내역 조회 memberId: {}", request.userId());
         if (memberCouponRepository.existsByCouponIdAndMemberId(request.couponId(), request.userId())) {
             throw new IllegalArgumentException("이미 발급받은 쿠폰입니다");
         }
         Coupon coupon = couponRepository.findById(request.couponId()).orElseThrow();
+        log.info("coupon 조회 memberId: {}", request.userId());
         return issueCoupon(request, coupon);
     }
 
@@ -50,9 +57,13 @@ public class CouponWriter {
             throw new IllegalArgumentException("쿠폰이 만료되었습니다.");
         }
         coupon.decrease();
+        log.info("coupon 갯수 감소 memberId: {}", request.userId());
         Member member = memberRepository.findById(request.userId()).orElseThrow();
         MemberCoupon memberCoupon = new MemberCoupon(member, coupon);
-        return memberCouponRepository.save(memberCoupon);
+        log.info("memberCoupon 저장 시도 memberId: {}", request.userId());
+        MemberCoupon savedMemberCoupon = memberCouponRepository.save(memberCoupon);
+        log.info("쿠폰 발급 완료 memberId: {}", request.userId());
+        return savedMemberCoupon;
     }
 
     public List<MemberCoupon> getUserCoupons(Long userId) {

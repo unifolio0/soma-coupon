@@ -8,10 +8,12 @@ import com.soma.coupon.module.coupon.dto.UseCouponRequest;
 import com.soma.coupon.module.coupon.tool.CouponWriter;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class CouponService {
@@ -31,10 +33,13 @@ public class CouponService {
     public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
         String lockName = request.couponId() + ":lock";
         RLock lock = redissonClient.getLock(lockName);
+        log.info("redis lock 획득 시도 memberId: {}", request.userId());
         lock.lock();
+        log.info("redis lock 획득 memberId: {}", request.userId());
         try {
             return couponWriter.issueForRedisLock(request);
         } finally {
+            log.info("redis unlock memberId: {}", request.userId());
             lock.unlock();
         }
     }
