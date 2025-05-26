@@ -1,0 +1,350 @@
+2025-05-26T09:40:15.789Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 2
+2025-05-26T09:40:15.789Z  INFO 7893 --- [coupon] [o-8080-exec-135] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 24
+2025-05-26T09:40:15.789Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 31
+2025-05-26T09:40:15.790Z  INFO 7893 --- [coupon] [o-8080-exec-121] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 4
+2025-05-26T09:40:15.790Z  INFO 7893 --- [coupon] [o-8080-exec-135] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 24
+2025-05-26T09:40:15.791Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 2
+2025-05-26T09:40:15.794Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 2
+2025-05-26T09:40:15.794Z  INFO 7893 --- [coupon] [o-8080-exec-148] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 8
+2025-05-26T09:40:15.796Z  INFO 7893 --- [coupon] [o-8080-exec-119] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 3
+2025-05-26T09:40:15.796Z  INFO 7893 --- [coupon] [o-8080-exec-123] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 11
+2025-05-26T09:40:15.797Z  INFO 7893 --- [coupon] [o-8080-exec-150] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 1
+2025-05-26T09:40:15.799Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 7
+2025-05-26T09:40:15.799Z  INFO 7893 --- [coupon] [o-8080-exec-123] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 11
+2025-05-26T09:40:15.800Z  INFO 7893 --- [coupon] [o-8080-exec-141] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 21
+2025-05-26T09:40:15.801Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 20
+2025-05-26T09:40:15.801Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 7
+2025-05-26T09:40:15.802Z  INFO 7893 --- [coupon] [o-8080-exec-144] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 18
+2025-05-26T09:40:15.803Z  INFO 7893 --- [coupon] [o-8080-exec-145] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 23
+2025-05-26T09:40:15.804Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 16
+2025-05-26T09:40:15.804Z  INFO 7893 --- [coupon] [o-8080-exec-126] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 5
+2025-05-26T09:40:15.805Z  INFO 7893 --- [coupon] [o-8080-exec-127] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 13
+2025-05-26T09:40:15.799Z  INFO 7893 --- [coupon] [o-8080-exec-122] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 6
+2025-05-26T09:40:15.805Z  INFO 7893 --- [coupon] [o-8080-exec-150] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 1
+2025-05-26T09:40:15.803Z  INFO 7893 --- [coupon] [o-8080-exec-131] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 19
+2025-05-26T09:40:15.805Z  INFO 7893 --- [coupon] [o-8080-exec-124] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 50
+2025-05-26T09:40:15.807Z  INFO 7893 --- [coupon] [o-8080-exec-133] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 22
+2025-05-26T09:40:15.807Z  INFO 7893 --- [coupon] [o-8080-exec-132] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 17
+2025-05-26T09:40:15.807Z  INFO 7893 --- [coupon] [o-8080-exec-152] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 12
+2025-05-26T09:40:15.807Z  INFO 7893 --- [coupon] [o-8080-exec-140] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 27
+2025-05-26T09:40:15.808Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 31
+2025-05-26T09:40:15.808Z  INFO 7893 --- [coupon] [o-8080-exec-139] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 39
+2025-05-26T09:40:15.809Z  INFO 7893 --- [coupon] [o-8080-exec-130] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 42
+2025-05-26T09:40:15.809Z  INFO 7893 --- [coupon] [o-8080-exec-141] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 21
+2025-05-26T09:40:15.810Z  INFO 7893 --- [coupon] [o-8080-exec-128] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 48
+2025-05-26T09:40:15.811Z  INFO 7893 --- [coupon] [o-8080-exec-142] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 41
+2025-05-26T09:40:15.811Z  INFO 7893 --- [coupon] [o-8080-exec-121] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 4
+2025-05-26T09:40:15.812Z  INFO 7893 --- [coupon] [o-8080-exec-125] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 40
+2025-05-26T09:40:15.812Z  INFO 7893 --- [coupon] [o-8080-exec-151] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 30
+2025-05-26T09:40:15.813Z  INFO 7893 --- [coupon] [o-8080-exec-118] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 43
+2025-05-26T09:40:15.814Z  INFO 7893 --- [coupon] [o-8080-exec-137] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 28
+2025-05-26T09:40:15.813Z  INFO 7893 --- [coupon] [o-8080-exec-136] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 14
+2025-05-26T09:40:15.815Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 46
+2025-05-26T09:40:15.820Z  INFO 7893 --- [coupon] [o-8080-exec-120] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 47
+2025-05-26T09:40:15.820Z  INFO 7893 --- [coupon] [o-8080-exec-148] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 8
+2025-05-26T09:40:15.821Z  INFO 7893 --- [coupon] [o-8080-exec-143] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 38
+2025-05-26T09:40:15.815Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 2
+2025-05-26T09:40:15.821Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 2
+2025-05-26T09:40:15.815Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 7
+2025-05-26T09:40:15.822Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 36
+2025-05-26T09:40:15.815Z  INFO 7893 --- [coupon] [o-8080-exec-150] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 1
+2025-05-26T09:40:15.815Z  INFO 7893 --- [coupon] [o-8080-exec-134] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 34
+2025-05-26T09:40:15.816Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 37
+2025-05-26T09:40:15.817Z  INFO 7893 --- [coupon] [o-8080-exec-129] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 29
+2025-05-26T09:40:15.818Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 35
+2025-05-26T09:40:15.818Z  INFO 7893 --- [coupon] [o-8080-exec-147] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 15
+2025-05-26T09:40:15.819Z  INFO 7893 --- [coupon] [o-8080-exec-149] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 9
+2025-05-26T09:40:15.820Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 25
+2025-05-26T09:40:15.820Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 26
+2025-05-26T09:40:15.821Z  INFO 7893 --- [coupon] [o-8080-exec-138] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 49
+2025-05-26T09:40:15.824Z  INFO 7893 --- [coupon] [o-8080-exec-119] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 3
+2025-05-26T09:40:15.824Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 2
+2025-05-26T09:40:15.825Z  INFO 7893 --- [coupon] [o-8080-exec-141] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 21
+2025-05-26T09:40:15.826Z  INFO 7893 --- [coupon] [o-8080-exec-121] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 4
+2025-05-26T09:40:15.827Z  INFO 7893 --- [coupon] [o-8080-exec-119] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 3
+2025-05-26T09:40:15.827Z  INFO 7893 --- [coupon] [o-8080-exec-123] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 11
+2025-05-26T09:40:15.828Z  INFO 7893 --- [coupon] [o-8080-exec-148] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 8
+2025-05-26T09:40:15.829Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 31
+2025-05-26T09:40:15.829Z  INFO 7893 --- [coupon] [o-8080-exec-135] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 24
+2025-05-26T09:40:15.833Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 2
+2025-05-26T09:40:15.836Z  INFO 7893 --- [coupon] [o-8080-exec-153] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 10
+2025-05-26T09:40:15.838Z  INFO 7893 --- [coupon] [o-8080-exec-154] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 44
+2025-05-26T09:40:15.842Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 7
+2025-05-26T09:40:15.842Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 7
+2025-05-26T09:40:15.844Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 7
+2025-05-26T09:40:15.844Z  INFO 7893 --- [coupon] [o-8080-exec-144] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 18
+2025-05-26T09:40:15.846Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 7
+2025-05-26T09:40:15.847Z  INFO 7893 --- [coupon] [o-8080-exec-144] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 18
+2025-05-26T09:40:15.848Z  INFO 7893 --- [coupon] [o-8080-exec-155] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 45
+2025-05-26T09:40:15.854Z  INFO 7893 --- [coupon] [o-8080-exec-150] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 1
+2025-05-26T09:40:15.854Z  INFO 7893 --- [coupon] [o-8080-exec-150] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 1
+2025-05-26T09:40:15.856Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 32
+2025-05-26T09:40:15.857Z  INFO 7893 --- [coupon] [o-8080-exec-150] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 1
+2025-05-26T09:40:15.858Z  INFO 7893 --- [coupon] [o-8080-exec-156] c.s.c.m.c.controller.CouponController    : x lock api start memberId: 33
+2025-05-26T09:40:15.858Z  INFO 7893 --- [coupon] [o-8080-exec-145] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 23
+2025-05-26T09:40:15.862Z  INFO 7893 --- [coupon] [o-8080-exec-145] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 23
+2025-05-26T09:40:15.864Z  INFO 7893 --- [coupon] [o-8080-exec-150] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 1
+2025-05-26T09:40:15.873Z  INFO 7893 --- [coupon] [o-8080-exec-141] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 21
+2025-05-26T09:40:15.873Z  INFO 7893 --- [coupon] [o-8080-exec-141] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 21
+2025-05-26T09:40:15.875Z  INFO 7893 --- [coupon] [o-8080-exec-141] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 21
+2025-05-26T09:40:15.875Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 16
+2025-05-26T09:40:15.877Z  INFO 7893 --- [coupon] [o-8080-exec-141] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 21
+2025-05-26T09:40:15.878Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 16
+2025-05-26T09:40:15.886Z  INFO 7893 --- [coupon] [o-8080-exec-121] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 4
+2025-05-26T09:40:15.886Z  INFO 7893 --- [coupon] [o-8080-exec-121] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 4
+2025-05-26T09:40:15.887Z  INFO 7893 --- [coupon] [o-8080-exec-121] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 4
+2025-05-26T09:40:15.888Z  INFO 7893 --- [coupon] [o-8080-exec-126] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 5
+2025-05-26T09:40:15.890Z  INFO 7893 --- [coupon] [o-8080-exec-121] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 4
+2025-05-26T09:40:15.891Z  INFO 7893 --- [coupon] [o-8080-exec-126] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 5
+2025-05-26T09:40:15.900Z  INFO 7893 --- [coupon] [o-8080-exec-119] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 3
+2025-05-26T09:40:15.900Z  INFO 7893 --- [coupon] [o-8080-exec-119] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 3
+2025-05-26T09:40:15.901Z  INFO 7893 --- [coupon] [o-8080-exec-127] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 13
+2025-05-26T09:40:15.902Z  INFO 7893 --- [coupon] [o-8080-exec-119] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 3
+2025-05-26T09:40:15.903Z  INFO 7893 --- [coupon] [o-8080-exec-119] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 3
+2025-05-26T09:40:15.903Z  INFO 7893 --- [coupon] [o-8080-exec-127] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 13
+2025-05-26T09:40:15.913Z  INFO 7893 --- [coupon] [o-8080-exec-123] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 11
+2025-05-26T09:40:15.913Z  INFO 7893 --- [coupon] [o-8080-exec-123] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 11
+2025-05-26T09:40:15.914Z  INFO 7893 --- [coupon] [o-8080-exec-122] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 6
+2025-05-26T09:40:15.916Z  INFO 7893 --- [coupon] [o-8080-exec-123] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 11
+2025-05-26T09:40:15.917Z  INFO 7893 --- [coupon] [o-8080-exec-122] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 6
+2025-05-26T09:40:15.917Z  INFO 7893 --- [coupon] [o-8080-exec-123] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 11
+2025-05-26T09:40:15.926Z  INFO 7893 --- [coupon] [o-8080-exec-148] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 8
+2025-05-26T09:40:15.926Z  INFO 7893 --- [coupon] [o-8080-exec-148] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 8
+2025-05-26T09:40:15.927Z  INFO 7893 --- [coupon] [o-8080-exec-131] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 19
+2025-05-26T09:40:15.929Z  INFO 7893 --- [coupon] [o-8080-exec-148] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 8
+2025-05-26T09:40:15.930Z  INFO 7893 --- [coupon] [o-8080-exec-131] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 19
+2025-05-26T09:40:15.932Z  INFO 7893 --- [coupon] [o-8080-exec-148] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 8
+2025-05-26T09:40:15.941Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 31
+2025-05-26T09:40:15.941Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 31
+2025-05-26T09:40:15.943Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 31
+2025-05-26T09:40:15.943Z  INFO 7893 --- [coupon] [o-8080-exec-124] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 50
+2025-05-26T09:40:15.945Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 31
+2025-05-26T09:40:15.946Z  INFO 7893 --- [coupon] [o-8080-exec-124] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 50
+2025-05-26T09:40:15.954Z  INFO 7893 --- [coupon] [o-8080-exec-135] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 24
+2025-05-26T09:40:15.954Z  INFO 7893 --- [coupon] [o-8080-exec-135] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 24
+2025-05-26T09:40:15.956Z  INFO 7893 --- [coupon] [o-8080-exec-135] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 24
+2025-05-26T09:40:15.958Z  INFO 7893 --- [coupon] [o-8080-exec-135] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 24
+2025-05-26T09:40:15.959Z  INFO 7893 --- [coupon] [o-8080-exec-133] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 22
+2025-05-26T09:40:15.962Z  INFO 7893 --- [coupon] [o-8080-exec-133] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 22
+2025-05-26T09:40:15.968Z  INFO 7893 --- [coupon] [o-8080-exec-144] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 18
+2025-05-26T09:40:15.968Z  INFO 7893 --- [coupon] [o-8080-exec-144] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 18
+2025-05-26T09:40:15.970Z  INFO 7893 --- [coupon] [o-8080-exec-144] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 18
+2025-05-26T09:40:15.971Z  INFO 7893 --- [coupon] [o-8080-exec-132] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 17
+2025-05-26T09:40:15.973Z  INFO 7893 --- [coupon] [o-8080-exec-144] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 18
+2025-05-26T09:40:15.973Z  INFO 7893 --- [coupon] [o-8080-exec-132] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 17
+2025-05-26T09:40:15.982Z  INFO 7893 --- [coupon] [o-8080-exec-145] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 23
+2025-05-26T09:40:15.982Z  INFO 7893 --- [coupon] [o-8080-exec-145] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 23
+2025-05-26T09:40:15.983Z  INFO 7893 --- [coupon] [o-8080-exec-152] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 12
+2025-05-26T09:40:15.983Z  INFO 7893 --- [coupon] [o-8080-exec-145] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 23
+2025-05-26T09:40:15.985Z  INFO 7893 --- [coupon] [o-8080-exec-145] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 23
+2025-05-26T09:40:15.985Z  INFO 7893 --- [coupon] [o-8080-exec-152] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 12
+2025-05-26T09:40:15.993Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 16
+2025-05-26T09:40:15.993Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 16
+2025-05-26T09:40:15.994Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 16
+2025-05-26T09:40:15.994Z  INFO 7893 --- [coupon] [o-8080-exec-140] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 27
+2025-05-26T09:40:15.996Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 16
+2025-05-26T09:40:15.996Z  INFO 7893 --- [coupon] [o-8080-exec-140] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 27
+2025-05-26T09:40:16.004Z  INFO 7893 --- [coupon] [o-8080-exec-126] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 5
+2025-05-26T09:40:16.004Z  INFO 7893 --- [coupon] [o-8080-exec-126] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 5
+2025-05-26T09:40:16.006Z  INFO 7893 --- [coupon] [o-8080-exec-139] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 39
+2025-05-26T09:40:16.006Z  INFO 7893 --- [coupon] [o-8080-exec-126] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 5
+2025-05-26T09:40:16.007Z  INFO 7893 --- [coupon] [o-8080-exec-126] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 5
+2025-05-26T09:40:16.008Z  INFO 7893 --- [coupon] [o-8080-exec-139] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 39
+2025-05-26T09:40:16.016Z  INFO 7893 --- [coupon] [o-8080-exec-127] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 13
+2025-05-26T09:40:16.016Z  INFO 7893 --- [coupon] [o-8080-exec-127] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 13
+2025-05-26T09:40:16.017Z  INFO 7893 --- [coupon] [o-8080-exec-130] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 42
+2025-05-26T09:40:16.017Z  INFO 7893 --- [coupon] [o-8080-exec-127] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 13
+2025-05-26T09:40:16.019Z  INFO 7893 --- [coupon] [o-8080-exec-127] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 13
+2025-05-26T09:40:16.020Z  INFO 7893 --- [coupon] [o-8080-exec-130] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 42
+2025-05-26T09:40:16.032Z  INFO 7893 --- [coupon] [o-8080-exec-122] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 6
+2025-05-26T09:40:16.032Z  INFO 7893 --- [coupon] [o-8080-exec-122] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 6
+2025-05-26T09:40:16.033Z  INFO 7893 --- [coupon] [o-8080-exec-128] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 48
+2025-05-26T09:40:16.036Z  INFO 7893 --- [coupon] [o-8080-exec-122] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 6
+2025-05-26T09:40:16.037Z  INFO 7893 --- [coupon] [o-8080-exec-128] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 48
+2025-05-26T09:40:16.038Z  INFO 7893 --- [coupon] [o-8080-exec-122] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 6
+2025-05-26T09:40:16.048Z  INFO 7893 --- [coupon] [o-8080-exec-131] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 19
+2025-05-26T09:40:16.048Z  INFO 7893 --- [coupon] [o-8080-exec-131] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 19
+2025-05-26T09:40:16.049Z  INFO 7893 --- [coupon] [o-8080-exec-142] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 41
+2025-05-26T09:40:16.050Z  INFO 7893 --- [coupon] [o-8080-exec-131] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 19
+2025-05-26T09:40:16.052Z  INFO 7893 --- [coupon] [o-8080-exec-131] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 19
+2025-05-26T09:40:16.052Z  INFO 7893 --- [coupon] [o-8080-exec-142] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 41
+2025-05-26T09:40:16.061Z  INFO 7893 --- [coupon] [o-8080-exec-124] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 50
+2025-05-26T09:40:16.061Z  INFO 7893 --- [coupon] [o-8080-exec-124] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 50
+2025-05-26T09:40:16.063Z  INFO 7893 --- [coupon] [o-8080-exec-125] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 40
+2025-05-26T09:40:16.063Z  INFO 7893 --- [coupon] [o-8080-exec-124] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 50
+2025-05-26T09:40:16.064Z  INFO 7893 --- [coupon] [o-8080-exec-124] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 50
+2025-05-26T09:40:16.065Z  INFO 7893 --- [coupon] [o-8080-exec-125] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 40
+2025-05-26T09:40:16.073Z  INFO 7893 --- [coupon] [o-8080-exec-133] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 22
+2025-05-26T09:40:16.073Z  INFO 7893 --- [coupon] [o-8080-exec-133] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 22
+2025-05-26T09:40:16.074Z  INFO 7893 --- [coupon] [o-8080-exec-151] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 30
+2025-05-26T09:40:16.075Z  INFO 7893 --- [coupon] [o-8080-exec-133] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 22
+2025-05-26T09:40:16.077Z  INFO 7893 --- [coupon] [o-8080-exec-151] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 30
+2025-05-26T09:40:16.078Z  INFO 7893 --- [coupon] [o-8080-exec-133] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 22
+2025-05-26T09:40:16.086Z  INFO 7893 --- [coupon] [o-8080-exec-132] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 17
+2025-05-26T09:40:16.087Z  INFO 7893 --- [coupon] [o-8080-exec-132] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 17
+2025-05-26T09:40:16.089Z  INFO 7893 --- [coupon] [o-8080-exec-132] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 17
+2025-05-26T09:40:16.091Z  INFO 7893 --- [coupon] [o-8080-exec-132] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 17
+2025-05-26T09:40:16.094Z  INFO 7893 --- [coupon] [o-8080-exec-118] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 43
+2025-05-26T09:40:16.096Z  INFO 7893 --- [coupon] [o-8080-exec-118] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 43
+2025-05-26T09:40:16.103Z  INFO 7893 --- [coupon] [o-8080-exec-152] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 12
+2025-05-26T09:40:16.103Z  INFO 7893 --- [coupon] [o-8080-exec-152] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 12
+2025-05-26T09:40:16.104Z  INFO 7893 --- [coupon] [o-8080-exec-152] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 12
+2025-05-26T09:40:16.104Z  INFO 7893 --- [coupon] [o-8080-exec-137] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 28
+2025-05-26T09:40:16.106Z  INFO 7893 --- [coupon] [o-8080-exec-152] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 12
+2025-05-26T09:40:16.107Z  INFO 7893 --- [coupon] [o-8080-exec-137] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 28
+2025-05-26T09:40:16.114Z  INFO 7893 --- [coupon] [o-8080-exec-140] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 27
+2025-05-26T09:40:16.114Z  INFO 7893 --- [coupon] [o-8080-exec-140] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 27
+2025-05-26T09:40:16.116Z  INFO 7893 --- [coupon] [o-8080-exec-140] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 27
+2025-05-26T09:40:16.116Z  INFO 7893 --- [coupon] [o-8080-exec-136] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 14
+2025-05-26T09:40:16.118Z  INFO 7893 --- [coupon] [o-8080-exec-140] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 27
+2025-05-26T09:40:16.118Z  INFO 7893 --- [coupon] [o-8080-exec-136] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 14
+2025-05-26T09:40:16.125Z  INFO 7893 --- [coupon] [o-8080-exec-139] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 39
+2025-05-26T09:40:16.125Z  INFO 7893 --- [coupon] [o-8080-exec-139] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 39
+2025-05-26T09:40:16.126Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 46
+2025-05-26T09:40:16.127Z  INFO 7893 --- [coupon] [o-8080-exec-139] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 39
+2025-05-26T09:40:16.129Z  INFO 7893 --- [coupon] [o-8080-exec-139] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 39
+2025-05-26T09:40:16.129Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 46
+2025-05-26T09:40:16.137Z  INFO 7893 --- [coupon] [o-8080-exec-130] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 42
+2025-05-26T09:40:16.137Z  INFO 7893 --- [coupon] [o-8080-exec-130] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 42
+2025-05-26T09:40:16.138Z  INFO 7893 --- [coupon] [o-8080-exec-130] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 42
+2025-05-26T09:40:16.138Z  INFO 7893 --- [coupon] [o-8080-exec-120] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 47
+2025-05-26T09:40:16.140Z  INFO 7893 --- [coupon] [o-8080-exec-130] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 42
+2025-05-26T09:40:16.140Z  INFO 7893 --- [coupon] [o-8080-exec-120] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 47
+2025-05-26T09:40:16.149Z  INFO 7893 --- [coupon] [o-8080-exec-128] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 48
+2025-05-26T09:40:16.149Z  INFO 7893 --- [coupon] [o-8080-exec-128] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 48
+2025-05-26T09:40:16.151Z  INFO 7893 --- [coupon] [o-8080-exec-128] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 48
+2025-05-26T09:40:16.152Z  INFO 7893 --- [coupon] [o-8080-exec-143] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 38
+2025-05-26T09:40:16.155Z  INFO 7893 --- [coupon] [o-8080-exec-128] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 48
+2025-05-26T09:40:16.156Z  INFO 7893 --- [coupon] [o-8080-exec-143] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 38
+2025-05-26T09:40:16.164Z  INFO 7893 --- [coupon] [o-8080-exec-142] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 41
+2025-05-26T09:40:16.164Z  INFO 7893 --- [coupon] [o-8080-exec-142] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 41
+2025-05-26T09:40:16.165Z  INFO 7893 --- [coupon] [o-8080-exec-142] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 41
+2025-05-26T09:40:16.167Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 36
+2025-05-26T09:40:16.167Z  INFO 7893 --- [coupon] [o-8080-exec-142] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 41
+2025-05-26T09:40:16.169Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 36
+2025-05-26T09:40:16.176Z  INFO 7893 --- [coupon] [o-8080-exec-125] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 40
+2025-05-26T09:40:16.177Z  INFO 7893 --- [coupon] [o-8080-exec-125] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 40
+2025-05-26T09:40:16.178Z  INFO 7893 --- [coupon] [o-8080-exec-134] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 34
+2025-05-26T09:40:16.179Z  INFO 7893 --- [coupon] [o-8080-exec-125] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 40
+2025-05-26T09:40:16.180Z  INFO 7893 --- [coupon] [o-8080-exec-125] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 40
+2025-05-26T09:40:16.181Z  INFO 7893 --- [coupon] [o-8080-exec-134] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 34
+2025-05-26T09:40:16.189Z  INFO 7893 --- [coupon] [o-8080-exec-151] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 30
+2025-05-26T09:40:16.189Z  INFO 7893 --- [coupon] [o-8080-exec-151] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 30
+2025-05-26T09:40:16.191Z  INFO 7893 --- [coupon] [o-8080-exec-151] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 30
+2025-05-26T09:40:16.193Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 37
+2025-05-26T09:40:16.195Z  INFO 7893 --- [coupon] [o-8080-exec-151] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 30
+2025-05-26T09:40:16.196Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 37
+2025-05-26T09:40:16.206Z  INFO 7893 --- [coupon] [o-8080-exec-118] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 43
+2025-05-26T09:40:16.206Z  INFO 7893 --- [coupon] [o-8080-exec-118] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 43
+2025-05-26T09:40:16.207Z  INFO 7893 --- [coupon] [o-8080-exec-118] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 43
+2025-05-26T09:40:16.209Z  INFO 7893 --- [coupon] [o-8080-exec-118] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 43
+2025-05-26T09:40:16.211Z  INFO 7893 --- [coupon] [o-8080-exec-129] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 29
+2025-05-26T09:40:16.214Z  INFO 7893 --- [coupon] [o-8080-exec-129] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 29
+2025-05-26T09:40:16.220Z  INFO 7893 --- [coupon] [o-8080-exec-137] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 28
+2025-05-26T09:40:16.220Z  INFO 7893 --- [coupon] [o-8080-exec-137] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 28
+2025-05-26T09:40:16.221Z  INFO 7893 --- [coupon] [o-8080-exec-137] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 28
+2025-05-26T09:40:16.223Z  INFO 7893 --- [coupon] [o-8080-exec-137] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 28
+2025-05-26T09:40:16.225Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 35
+2025-05-26T09:40:16.227Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 35
+2025-05-26T09:40:16.232Z  INFO 7893 --- [coupon] [o-8080-exec-136] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 14
+2025-05-26T09:40:16.232Z  INFO 7893 --- [coupon] [o-8080-exec-136] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 14
+2025-05-26T09:40:16.233Z  INFO 7893 --- [coupon] [o-8080-exec-136] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 14
+2025-05-26T09:40:16.236Z  INFO 7893 --- [coupon] [o-8080-exec-147] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 15
+2025-05-26T09:40:16.237Z  INFO 7893 --- [coupon] [o-8080-exec-136] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 14
+2025-05-26T09:40:16.238Z  INFO 7893 --- [coupon] [o-8080-exec-147] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 15
+2025-05-26T09:40:16.246Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 46
+2025-05-26T09:40:16.246Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 46
+2025-05-26T09:40:16.248Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 46
+2025-05-26T09:40:16.250Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 46
+2025-05-26T09:40:16.251Z  INFO 7893 --- [coupon] [o-8080-exec-149] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 9
+2025-05-26T09:40:16.253Z  INFO 7893 --- [coupon] [o-8080-exec-149] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 9
+2025-05-26T09:40:16.260Z  INFO 7893 --- [coupon] [o-8080-exec-120] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 47
+2025-05-26T09:40:16.260Z  INFO 7893 --- [coupon] [o-8080-exec-120] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 47
+2025-05-26T09:40:16.262Z  INFO 7893 --- [coupon] [o-8080-exec-120] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 47
+2025-05-26T09:40:16.263Z  INFO 7893 --- [coupon] [o-8080-exec-120] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 47
+2025-05-26T09:40:16.265Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 25
+2025-05-26T09:40:16.267Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 25
+2025-05-26T09:40:16.272Z  INFO 7893 --- [coupon] [o-8080-exec-143] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 38
+2025-05-26T09:40:16.272Z  INFO 7893 --- [coupon] [o-8080-exec-143] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 38
+2025-05-26T09:40:16.274Z  INFO 7893 --- [coupon] [o-8080-exec-143] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 38
+2025-05-26T09:40:16.276Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 26
+2025-05-26T09:40:16.276Z  INFO 7893 --- [coupon] [o-8080-exec-143] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 38
+2025-05-26T09:40:16.278Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 26
+2025-05-26T09:40:16.285Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 36
+2025-05-26T09:40:16.285Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 36
+2025-05-26T09:40:16.286Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 36
+2025-05-26T09:40:16.288Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 36
+2025-05-26T09:40:16.288Z  INFO 7893 --- [coupon] [o-8080-exec-138] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 49
+2025-05-26T09:40:16.290Z  INFO 7893 --- [coupon] [o-8080-exec-138] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 49
+2025-05-26T09:40:16.297Z  INFO 7893 --- [coupon] [o-8080-exec-134] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 34
+2025-05-26T09:40:16.297Z  INFO 7893 --- [coupon] [o-8080-exec-134] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 34
+2025-05-26T09:40:16.298Z  INFO 7893 --- [coupon] [o-8080-exec-134] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 34
+2025-05-26T09:40:16.299Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 20
+2025-05-26T09:40:16.301Z  INFO 7893 --- [coupon] [o-8080-exec-134] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 34
+2025-05-26T09:40:16.302Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 20
+2025-05-26T09:40:16.309Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 37
+2025-05-26T09:40:16.310Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 37
+2025-05-26T09:40:16.311Z  INFO 7893 --- [coupon] [o-8080-exec-153] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 10
+2025-05-26T09:40:16.311Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 37
+2025-05-26T09:40:16.313Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 37
+2025-05-26T09:40:16.313Z  INFO 7893 --- [coupon] [o-8080-exec-153] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 10
+2025-05-26T09:40:16.324Z  INFO 7893 --- [coupon] [o-8080-exec-129] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 29
+2025-05-26T09:40:16.324Z  INFO 7893 --- [coupon] [o-8080-exec-129] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 29
+2025-05-26T09:40:16.327Z  INFO 7893 --- [coupon] [o-8080-exec-129] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 29
+2025-05-26T09:40:16.328Z  INFO 7893 --- [coupon] [o-8080-exec-154] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 44
+2025-05-26T09:40:16.331Z  INFO 7893 --- [coupon] [o-8080-exec-154] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 44
+2025-05-26T09:40:16.333Z  INFO 7893 --- [coupon] [o-8080-exec-129] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 29
+2025-05-26T09:40:16.341Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 35
+2025-05-26T09:40:16.341Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 35
+2025-05-26T09:40:16.343Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 35
+2025-05-26T09:40:16.345Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 35
+2025-05-26T09:40:16.346Z  INFO 7893 --- [coupon] [o-8080-exec-155] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 45
+2025-05-26T09:40:16.349Z  INFO 7893 --- [coupon] [o-8080-exec-155] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 45
+2025-05-26T09:40:16.353Z  INFO 7893 --- [coupon] [o-8080-exec-147] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 15
+2025-05-26T09:40:16.353Z  INFO 7893 --- [coupon] [o-8080-exec-147] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 15
+2025-05-26T09:40:16.355Z  INFO 7893 --- [coupon] [o-8080-exec-147] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 15
+2025-05-26T09:40:16.356Z  INFO 7893 --- [coupon] [o-8080-exec-147] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 15
+2025-05-26T09:40:16.358Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 32
+2025-05-26T09:40:16.360Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 32
+2025-05-26T09:40:16.365Z  INFO 7893 --- [coupon] [o-8080-exec-149] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 9
+2025-05-26T09:40:16.365Z  INFO 7893 --- [coupon] [o-8080-exec-149] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 9
+2025-05-26T09:40:16.367Z  INFO 7893 --- [coupon] [o-8080-exec-149] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 9
+2025-05-26T09:40:16.368Z  INFO 7893 --- [coupon] [o-8080-exec-156] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 내역 조회 memberId: 33
+2025-05-26T09:40:16.370Z  INFO 7893 --- [coupon] [o-8080-exec-149] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 9
+2025-05-26T09:40:16.371Z  INFO 7893 --- [coupon] [o-8080-exec-156] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 시도 memberId: 33
+2025-05-26T09:40:16.377Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 25
+2025-05-26T09:40:16.377Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 25
+2025-05-26T09:40:16.378Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 25
+2025-05-26T09:40:16.381Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 25
+2025-05-26T09:40:16.389Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 26
+2025-05-26T09:40:16.389Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 26
+2025-05-26T09:40:16.391Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 26
+2025-05-26T09:40:16.392Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 26
+2025-05-26T09:40:16.400Z  INFO 7893 --- [coupon] [o-8080-exec-138] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 49
+2025-05-26T09:40:16.400Z  INFO 7893 --- [coupon] [o-8080-exec-138] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 49
+2025-05-26T09:40:16.402Z  INFO 7893 --- [coupon] [o-8080-exec-138] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 49
+2025-05-26T09:40:16.404Z  INFO 7893 --- [coupon] [o-8080-exec-138] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 49
+2025-05-26T09:40:16.415Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 20
+2025-05-26T09:40:16.415Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 20
+2025-05-26T09:40:16.417Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 20
+2025-05-26T09:40:16.420Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 20
+2025-05-26T09:40:16.429Z  INFO 7893 --- [coupon] [o-8080-exec-153] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 10
+2025-05-26T09:40:16.429Z  INFO 7893 --- [coupon] [o-8080-exec-153] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 10
+2025-05-26T09:40:16.431Z  INFO 7893 --- [coupon] [o-8080-exec-153] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 10
+2025-05-26T09:40:16.433Z  INFO 7893 --- [coupon] [o-8080-exec-153] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 10
+2025-05-26T09:40:16.442Z  INFO 7893 --- [coupon] [o-8080-exec-154] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 44
+2025-05-26T09:40:16.442Z  INFO 7893 --- [coupon] [o-8080-exec-154] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 44
+2025-05-26T09:40:16.444Z  INFO 7893 --- [coupon] [o-8080-exec-154] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 44
+2025-05-26T09:40:16.445Z  INFO 7893 --- [coupon] [o-8080-exec-154] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 44
+2025-05-26T09:40:16.453Z  INFO 7893 --- [coupon] [o-8080-exec-155] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 45
+2025-05-26T09:40:16.453Z  INFO 7893 --- [coupon] [o-8080-exec-155] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 45
+2025-05-26T09:40:16.454Z  INFO 7893 --- [coupon] [o-8080-exec-155] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 45
+2025-05-26T09:40:16.456Z  INFO 7893 --- [coupon] [o-8080-exec-155] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 45
+2025-05-26T09:40:16.465Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 32
+2025-05-26T09:40:16.465Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 32
+2025-05-26T09:40:16.466Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 32
+2025-05-26T09:40:16.469Z  INFO 7893 --- [coupon] [o-8080-exec-146] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 32
+2025-05-26T09:40:16.481Z  INFO 7893 --- [coupon] [o-8080-exec-156] c.s.c.module.coupon.tool.CouponWriter    : x lock 획득 memberId: 33
+2025-05-26T09:40:16.482Z  INFO 7893 --- [coupon] [o-8080-exec-156] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 33
+2025-05-26T09:40:16.483Z  INFO 7893 --- [coupon] [o-8080-exec-156] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 33
+2025-05-26T09:40:16.485Z  INFO 7893 --- [coupon] [o-8080-exec-156] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 33

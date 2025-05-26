@@ -1,0 +1,450 @@
+2025-05-26T09:34:54.898Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.m.c.controller.CouponController    : redis api start memberId: 5
+2025-05-26T09:34:54.898Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 5
+2025-05-26T09:34:54.901Z  INFO 7893 --- [coupon] [io-8080-exec-93] c.s.c.m.c.controller.CouponController    : redis api start memberId: 9
+2025-05-26T09:34:54.901Z  INFO 7893 --- [coupon] [io-8080-exec-89] c.s.c.m.c.controller.CouponController    : redis api start memberId: 26
+2025-05-26T09:34:54.901Z  INFO 7893 --- [coupon] [io-8080-exec-93] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 9
+2025-05-26T09:34:54.901Z  INFO 7893 --- [coupon] [io-8080-exec-89] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 26
+2025-05-26T09:34:54.902Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.m.c.controller.CouponController    : redis api start memberId: 23
+2025-05-26T09:34:54.902Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 23
+2025-05-26T09:34:54.906Z  INFO 7893 --- [coupon] [io-8080-exec-91] c.s.c.m.c.controller.CouponController    : redis api start memberId: 45
+2025-05-26T09:34:54.906Z  INFO 7893 --- [coupon] [io-8080-exec-91] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 45
+2025-05-26T09:34:54.907Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.m.c.controller.CouponController    : redis api start memberId: 22
+2025-05-26T09:34:54.907Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 22
+2025-05-26T09:34:54.909Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.m.c.controller.CouponController    : redis api start memberId: 2
+2025-05-26T09:34:54.909Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 2
+2025-05-26T09:34:54.911Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.m.c.controller.CouponController    : redis api start memberId: 6
+2025-05-26T09:34:54.911Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 6
+2025-05-26T09:34:54.911Z  INFO 7893 --- [coupon] [io-8080-exec-82] c.s.c.m.c.controller.CouponController    : redis api start memberId: 20
+2025-05-26T09:34:54.911Z  INFO 7893 --- [coupon] [io-8080-exec-82] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 20
+2025-05-26T09:34:54.912Z  INFO 7893 --- [coupon] [io-8080-exec-86] c.s.c.m.c.controller.CouponController    : redis api start memberId: 3
+2025-05-26T09:34:54.912Z  INFO 7893 --- [coupon] [io-8080-exec-86] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 3
+2025-05-26T09:34:54.913Z  INFO 7893 --- [coupon] [io-8080-exec-80] c.s.c.m.c.controller.CouponController    : redis api start memberId: 27
+2025-05-26T09:34:54.913Z  INFO 7893 --- [coupon] [io-8080-exec-80] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 27
+2025-05-26T09:34:54.913Z  INFO 7893 --- [coupon] [io-8080-exec-98] c.s.c.m.c.controller.CouponController    : redis api start memberId: 10
+2025-05-26T09:34:54.913Z  INFO 7893 --- [coupon] [io-8080-exec-98] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 10
+2025-05-26T09:34:54.914Z  INFO 7893 --- [coupon] [io-8080-exec-48] c.s.c.m.c.controller.CouponController    : redis api start memberId: 15
+2025-05-26T09:34:54.914Z  INFO 7893 --- [coupon] [io-8080-exec-48] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 15
+2025-05-26T09:34:54.914Z  INFO 7893 --- [coupon] [io-8080-exec-81] c.s.c.m.c.controller.CouponController    : redis api start memberId: 16
+2025-05-26T09:34:54.914Z  INFO 7893 --- [coupon] [io-8080-exec-81] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 16
+2025-05-26T09:34:54.915Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.m.c.controller.CouponController    : redis api start memberId: 48
+2025-05-26T09:34:54.915Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 48
+2025-05-26T09:34:54.916Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 22
+2025-05-26T09:34:54.918Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.m.c.controller.CouponController    : redis api start memberId: 25
+2025-05-26T09:34:54.918Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 25
+2025-05-26T09:34:54.918Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 48
+2025-05-26T09:34:54.919Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 6
+2025-05-26T09:34:54.920Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.m.c.controller.CouponController    : redis api start memberId: 29
+2025-05-26T09:34:54.920Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 29
+2025-05-26T09:34:54.920Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.m.c.controller.CouponController    : redis api start memberId: 8
+2025-05-26T09:34:54.920Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 8
+2025-05-26T09:34:54.922Z  INFO 7893 --- [coupon] [io-8080-exec-85] c.s.c.m.c.controller.CouponController    : redis api start memberId: 41
+2025-05-26T09:34:54.922Z  INFO 7893 --- [coupon] [io-8080-exec-85] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 41
+2025-05-26T09:34:54.922Z  INFO 7893 --- [coupon] [io-8080-exec-92] c.s.c.m.c.controller.CouponController    : redis api start memberId: 34
+2025-05-26T09:34:54.922Z  INFO 7893 --- [coupon] [io-8080-exec-92] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 34
+2025-05-26T09:34:54.912Z  INFO 7893 --- [coupon] [io-8080-exec-83] c.s.c.m.c.controller.CouponController    : redis api start memberId: 13
+2025-05-26T09:34:54.923Z  INFO 7893 --- [coupon] [io-8080-exec-83] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 13
+2025-05-26T09:34:54.924Z  INFO 7893 --- [coupon] [io-8080-exec-97] c.s.c.m.c.controller.CouponController    : redis api start memberId: 38
+2025-05-26T09:34:54.924Z  INFO 7893 --- [coupon] [io-8080-exec-97] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 38
+2025-05-26T09:34:54.913Z  INFO 7893 --- [coupon] [o-8080-exec-100] c.s.c.m.c.controller.CouponController    : redis api start memberId: 47
+2025-05-26T09:34:54.924Z  INFO 7893 --- [coupon] [o-8080-exec-100] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 47
+2025-05-26T09:34:54.913Z  INFO 7893 --- [coupon] [io-8080-exec-94] c.s.c.m.c.controller.CouponController    : redis api start memberId: 12
+2025-05-26T09:34:54.925Z  INFO 7893 --- [coupon] [io-8080-exec-94] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 12
+2025-05-26T09:34:54.926Z  INFO 7893 --- [coupon] [io-8080-exec-88] c.s.c.m.c.controller.CouponController    : redis api start memberId: 4
+2025-05-26T09:34:54.926Z  INFO 7893 --- [coupon] [io-8080-exec-88] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 4
+2025-05-26T09:34:54.927Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.m.c.controller.CouponController    : redis api start memberId: 39
+2025-05-26T09:34:54.927Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 39
+2025-05-26T09:34:54.927Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 5
+2025-05-26T09:34:54.929Z  INFO 7893 --- [coupon] [io-8080-exec-87] c.s.c.m.c.controller.CouponController    : redis api start memberId: 30
+2025-05-26T09:34:54.929Z  INFO 7893 --- [coupon] [io-8080-exec-87] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 30
+2025-05-26T09:34:54.930Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 6
+2025-05-26T09:34:54.930Z  INFO 7893 --- [coupon] [io-8080-exec-84] c.s.c.m.c.controller.CouponController    : redis api start memberId: 50
+2025-05-26T09:34:54.930Z  INFO 7893 --- [coupon] [io-8080-exec-84] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 50
+2025-05-26T09:34:54.932Z  INFO 7893 --- [coupon] [io-8080-exec-90] c.s.c.m.c.controller.CouponController    : redis api start memberId: 24
+2025-05-26T09:34:54.932Z  INFO 7893 --- [coupon] [io-8080-exec-90] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 24
+2025-05-26T09:34:54.932Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 6
+2025-05-26T09:34:54.932Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 6
+2025-05-26T09:34:54.933Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 6
+2025-05-26T09:34:54.934Z  INFO 7893 --- [coupon] [io-8080-exec-51] c.s.c.m.c.controller.CouponController    : redis api start memberId: 35
+2025-05-26T09:34:54.934Z  INFO 7893 --- [coupon] [io-8080-exec-51] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 35
+2025-05-26T09:34:54.936Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 6
+2025-05-26T09:34:54.936Z  INFO 7893 --- [coupon] [io-8080-exec-99] c.s.c.m.c.controller.CouponController    : redis api start memberId: 32
+2025-05-26T09:34:54.936Z  INFO 7893 --- [coupon] [io-8080-exec-99] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 32
+2025-05-26T09:34:54.943Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 8
+2025-05-26T09:34:54.944Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 2
+2025-05-26T09:34:54.944Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 25
+2025-05-26T09:34:54.946Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 23
+2025-05-26T09:34:54.941Z  INFO 7893 --- [coupon] [io-8080-exec-91] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 45
+2025-05-26T09:34:54.946Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 6
+2025-05-26T09:34:54.948Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 5
+2025-05-26T09:34:54.950Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 5
+2025-05-26T09:34:54.950Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 5
+2025-05-26T09:34:54.951Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 5
+2025-05-26T09:34:54.952Z  INFO 7893 --- [coupon] [io-8080-exec-85] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 41
+2025-05-26T09:34:54.954Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 5
+2025-05-26T09:34:54.955Z  INFO 7893 --- [coupon] [o-8080-exec-104] c.s.c.m.c.controller.CouponController    : redis api start memberId: 42
+2025-05-26T09:34:54.955Z  INFO 7893 --- [coupon] [o-8080-exec-104] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 42
+2025-05-26T09:34:54.965Z  INFO 7893 --- [coupon] [o-8080-exec-105] c.s.c.m.c.controller.CouponController    : redis api start memberId: 43
+2025-05-26T09:34:54.965Z  INFO 7893 --- [coupon] [o-8080-exec-105] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 43
+2025-05-26T09:34:54.967Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.m.c.controller.CouponController    : redis api start memberId: 11
+2025-05-26T09:34:54.967Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 11
+2025-05-26T09:34:54.969Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 5
+2025-05-26T09:34:54.971Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 48
+2025-05-26T09:34:54.973Z  INFO 7893 --- [coupon] [io-8080-exec-83] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 13
+2025-05-26T09:34:54.973Z  INFO 7893 --- [coupon] [o-8080-exec-107] c.s.c.m.c.controller.CouponController    : redis api start memberId: 18
+2025-05-26T09:34:54.973Z  INFO 7893 --- [coupon] [o-8080-exec-107] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 18
+2025-05-26T09:34:54.974Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 48
+2025-05-26T09:34:54.974Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 48
+2025-05-26T09:34:54.975Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 48
+2025-05-26T09:34:54.976Z  INFO 7893 --- [coupon] [o-8080-exec-106] c.s.c.m.c.controller.CouponController    : redis api start memberId: 21
+2025-05-26T09:34:54.976Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.m.c.controller.CouponController    : redis api start memberId: 19
+2025-05-26T09:34:54.976Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 19
+2025-05-26T09:34:54.977Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 48
+2025-05-26T09:34:54.976Z  INFO 7893 --- [coupon] [o-8080-exec-106] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 21
+2025-05-26T09:34:54.979Z  INFO 7893 --- [coupon] [o-8080-exec-108] c.s.c.m.c.controller.CouponController    : redis api start memberId: 33
+2025-05-26T09:34:54.979Z  INFO 7893 --- [coupon] [o-8080-exec-108] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 33
+2025-05-26T09:34:54.981Z  INFO 7893 --- [coupon] [o-8080-exec-109] c.s.c.m.c.controller.CouponController    : redis api start memberId: 31
+2025-05-26T09:34:54.981Z  INFO 7893 --- [coupon] [o-8080-exec-109] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 31
+2025-05-26T09:34:54.988Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 48
+2025-05-26T09:34:54.990Z  INFO 7893 --- [coupon] [o-8080-exec-110] c.s.c.m.c.controller.CouponController    : redis api start memberId: 36
+2025-05-26T09:34:54.991Z  INFO 7893 --- [coupon] [o-8080-exec-110] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 36
+2025-05-26T09:34:54.992Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 22
+2025-05-26T09:34:54.992Z  INFO 7893 --- [coupon] [io-8080-exec-97] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 38
+2025-05-26T09:34:54.995Z  INFO 7893 --- [coupon] [o-8080-exec-111] c.s.c.m.c.controller.CouponController    : redis api start memberId: 40
+2025-05-26T09:34:54.995Z  INFO 7893 --- [coupon] [o-8080-exec-111] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 40
+2025-05-26T09:34:54.995Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 22
+2025-05-26T09:34:54.995Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 22
+2025-05-26T09:34:54.995Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.m.c.controller.CouponController    : redis api start memberId: 17
+2025-05-26T09:34:54.996Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 17
+2025-05-26T09:34:54.997Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 22
+2025-05-26T09:34:54.999Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 22
+2025-05-26T09:34:55.008Z  INFO 7893 --- [coupon] [o-8080-exec-112] c.s.c.m.c.controller.CouponController    : redis api start memberId: 49
+2025-05-26T09:34:55.008Z  INFO 7893 --- [coupon] [o-8080-exec-112] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 49
+2025-05-26T09:34:55.008Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 22
+2025-05-26T09:34:55.011Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 8
+2025-05-26T09:34:55.012Z  INFO 7893 --- [coupon] [o-8080-exec-100] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 47
+2025-05-26T09:34:55.013Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 8
+2025-05-26T09:34:55.013Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 8
+2025-05-26T09:34:55.015Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.m.c.controller.CouponController    : redis api start memberId: 1
+2025-05-26T09:34:55.016Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 1
+2025-05-26T09:34:55.018Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 8
+2025-05-26T09:34:55.019Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 8
+2025-05-26T09:34:55.022Z  INFO 7893 --- [coupon] [o-8080-exec-113] c.s.c.m.c.controller.CouponController    : redis api start memberId: 14
+2025-05-26T09:34:55.022Z  INFO 7893 --- [coupon] [o-8080-exec-113] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 14
+2025-05-26T09:34:55.027Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 8
+2025-05-26T09:34:55.027Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.m.c.controller.CouponController    : redis api start memberId: 37
+2025-05-26T09:34:55.027Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 37
+2025-05-26T09:34:55.029Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 25
+2025-05-26T09:34:55.030Z  INFO 7893 --- [coupon] [io-8080-exec-94] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 12
+2025-05-26T09:34:55.032Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 25
+2025-05-26T09:34:55.032Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 25
+2025-05-26T09:34:55.033Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 25
+2025-05-26T09:34:55.035Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 25
+2025-05-26T09:34:55.034Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.m.c.controller.CouponController    : redis api start memberId: 7
+2025-05-26T09:34:55.037Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 7
+2025-05-26T09:34:55.044Z  INFO 7893 --- [coupon] [io-8080-exec-78] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 25
+2025-05-26T09:34:55.045Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.m.c.controller.CouponController    : redis api start memberId: 46
+2025-05-26T09:34:55.045Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 46
+2025-05-26T09:34:55.045Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 2
+2025-05-26T09:34:55.048Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 2
+2025-05-26T09:34:55.048Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 2
+2025-05-26T09:34:55.049Z  INFO 7893 --- [coupon] [io-8080-exec-88] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 4
+2025-05-26T09:34:55.050Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 2
+2025-05-26T09:34:55.052Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 2
+2025-05-26T09:34:55.054Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.m.c.controller.CouponController    : redis api start memberId: 28
+2025-05-26T09:34:55.054Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 28
+2025-05-26T09:34:55.056Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.m.c.controller.CouponController    : redis api start memberId: 44
+2025-05-26T09:34:55.056Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.m.coupon.service.CouponService     : 쿠폰 발급 내역 조회 memberId: 44
+2025-05-26T09:34:55.059Z  INFO 7893 --- [coupon] [io-8080-exec-42] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 2
+2025-05-26T09:34:55.059Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 29
+2025-05-26T09:34:55.061Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 29
+2025-05-26T09:34:55.063Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 39
+2025-05-26T09:34:55.063Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 29
+2025-05-26T09:34:55.063Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 29
+2025-05-26T09:34:55.065Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 29
+2025-05-26T09:34:55.067Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 29
+2025-05-26T09:34:55.074Z  INFO 7893 --- [coupon] [o-8080-exec-103] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 29
+2025-05-26T09:34:55.076Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 23
+2025-05-26T09:34:55.078Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 23
+2025-05-26T09:34:55.078Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 23
+2025-05-26T09:34:55.079Z  INFO 7893 --- [coupon] [io-8080-exec-89] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 26
+2025-05-26T09:34:55.079Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 23
+2025-05-26T09:34:55.081Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 23
+2025-05-26T09:34:55.090Z  INFO 7893 --- [coupon] [io-8080-exec-55] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 23
+2025-05-26T09:34:55.092Z  INFO 7893 --- [coupon] [io-8080-exec-85] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 41
+2025-05-26T09:34:55.094Z  INFO 7893 --- [coupon] [io-8080-exec-93] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 9
+2025-05-26T09:34:55.095Z  INFO 7893 --- [coupon] [io-8080-exec-85] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 41
+2025-05-26T09:34:55.095Z  INFO 7893 --- [coupon] [io-8080-exec-85] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 41
+2025-05-26T09:34:55.096Z  INFO 7893 --- [coupon] [io-8080-exec-85] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 41
+2025-05-26T09:34:55.098Z  INFO 7893 --- [coupon] [io-8080-exec-85] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 41
+2025-05-26T09:34:55.107Z  INFO 7893 --- [coupon] [io-8080-exec-85] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 41
+2025-05-26T09:34:55.108Z  INFO 7893 --- [coupon] [io-8080-exec-83] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 13
+2025-05-26T09:34:55.110Z  INFO 7893 --- [coupon] [io-8080-exec-84] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 50
+2025-05-26T09:34:55.111Z  INFO 7893 --- [coupon] [io-8080-exec-83] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 13
+2025-05-26T09:34:55.111Z  INFO 7893 --- [coupon] [io-8080-exec-83] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 13
+2025-05-26T09:34:55.112Z  INFO 7893 --- [coupon] [io-8080-exec-83] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 13
+2025-05-26T09:34:55.114Z  INFO 7893 --- [coupon] [io-8080-exec-83] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 13
+2025-05-26T09:34:55.122Z  INFO 7893 --- [coupon] [io-8080-exec-83] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 13
+2025-05-26T09:34:55.123Z  INFO 7893 --- [coupon] [io-8080-exec-97] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 38
+2025-05-26T09:34:55.126Z  INFO 7893 --- [coupon] [io-8080-exec-97] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 38
+2025-05-26T09:34:55.126Z  INFO 7893 --- [coupon] [io-8080-exec-97] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 38
+2025-05-26T09:34:55.126Z  INFO 7893 --- [coupon] [io-8080-exec-90] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 24
+2025-05-26T09:34:55.127Z  INFO 7893 --- [coupon] [io-8080-exec-97] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 38
+2025-05-26T09:34:55.129Z  INFO 7893 --- [coupon] [io-8080-exec-97] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 38
+2025-05-26T09:34:55.139Z  INFO 7893 --- [coupon] [io-8080-exec-97] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 38
+2025-05-26T09:34:55.140Z  INFO 7893 --- [coupon] [o-8080-exec-100] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 47
+2025-05-26T09:34:55.142Z  INFO 7893 --- [coupon] [io-8080-exec-51] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 35
+2025-05-26T09:34:55.143Z  INFO 7893 --- [coupon] [o-8080-exec-100] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 47
+2025-05-26T09:34:55.143Z  INFO 7893 --- [coupon] [o-8080-exec-100] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 47
+2025-05-26T09:34:55.144Z  INFO 7893 --- [coupon] [o-8080-exec-100] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 47
+2025-05-26T09:34:55.146Z  INFO 7893 --- [coupon] [o-8080-exec-100] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 47
+2025-05-26T09:34:55.155Z  INFO 7893 --- [coupon] [o-8080-exec-100] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 47
+2025-05-26T09:34:55.157Z  INFO 7893 --- [coupon] [io-8080-exec-94] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 12
+2025-05-26T09:34:55.159Z  INFO 7893 --- [coupon] [io-8080-exec-99] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 32
+2025-05-26T09:34:55.160Z  INFO 7893 --- [coupon] [io-8080-exec-94] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 12
+2025-05-26T09:34:55.160Z  INFO 7893 --- [coupon] [io-8080-exec-94] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 12
+2025-05-26T09:34:55.161Z  INFO 7893 --- [coupon] [io-8080-exec-94] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 12
+2025-05-26T09:34:55.163Z  INFO 7893 --- [coupon] [io-8080-exec-94] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 12
+2025-05-26T09:34:55.170Z  INFO 7893 --- [coupon] [io-8080-exec-94] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 12
+2025-05-26T09:34:55.172Z  INFO 7893 --- [coupon] [io-8080-exec-88] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 4
+2025-05-26T09:34:55.174Z  INFO 7893 --- [coupon] [io-8080-exec-88] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 4
+2025-05-26T09:34:55.174Z  INFO 7893 --- [coupon] [io-8080-exec-88] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 4
+2025-05-26T09:34:55.175Z  INFO 7893 --- [coupon] [io-8080-exec-82] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 20
+2025-05-26T09:34:55.175Z  INFO 7893 --- [coupon] [io-8080-exec-88] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 4
+2025-05-26T09:34:55.177Z  INFO 7893 --- [coupon] [io-8080-exec-88] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 4
+2025-05-26T09:34:55.185Z  INFO 7893 --- [coupon] [io-8080-exec-88] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 4
+2025-05-26T09:34:55.187Z  INFO 7893 --- [coupon] [io-8080-exec-91] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 45
+2025-05-26T09:34:55.188Z  INFO 7893 --- [coupon] [io-8080-exec-86] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 3
+2025-05-26T09:34:55.189Z  INFO 7893 --- [coupon] [io-8080-exec-91] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 45
+2025-05-26T09:34:55.189Z  INFO 7893 --- [coupon] [io-8080-exec-91] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 45
+2025-05-26T09:34:55.191Z  INFO 7893 --- [coupon] [io-8080-exec-91] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 45
+2025-05-26T09:34:55.192Z  INFO 7893 --- [coupon] [io-8080-exec-91] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 45
+2025-05-26T09:34:55.202Z  INFO 7893 --- [coupon] [io-8080-exec-91] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 45
+2025-05-26T09:34:55.203Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 39
+2025-05-26T09:34:55.205Z  INFO 7893 --- [coupon] [io-8080-exec-80] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 27
+2025-05-26T09:34:55.206Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 39
+2025-05-26T09:34:55.206Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 39
+2025-05-26T09:34:55.207Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 39
+2025-05-26T09:34:55.209Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 39
+2025-05-26T09:34:55.219Z  INFO 7893 --- [coupon] [io-8080-exec-96] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 39
+2025-05-26T09:34:55.221Z  INFO 7893 --- [coupon] [io-8080-exec-89] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 26
+2025-05-26T09:34:55.224Z  INFO 7893 --- [coupon] [io-8080-exec-89] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 26
+2025-05-26T09:34:55.224Z  INFO 7893 --- [coupon] [io-8080-exec-89] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 26
+2025-05-26T09:34:55.225Z  INFO 7893 --- [coupon] [io-8080-exec-98] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 10
+2025-05-26T09:34:55.229Z  INFO 7893 --- [coupon] [io-8080-exec-89] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 26
+2025-05-26T09:34:55.232Z  INFO 7893 --- [coupon] [io-8080-exec-89] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 26
+2025-05-26T09:34:55.242Z  INFO 7893 --- [coupon] [io-8080-exec-89] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 26
+2025-05-26T09:34:55.244Z  INFO 7893 --- [coupon] [io-8080-exec-93] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 9
+2025-05-26T09:34:55.246Z  INFO 7893 --- [coupon] [io-8080-exec-48] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 15
+2025-05-26T09:34:55.247Z  INFO 7893 --- [coupon] [io-8080-exec-93] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 9
+2025-05-26T09:34:55.247Z  INFO 7893 --- [coupon] [io-8080-exec-93] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 9
+2025-05-26T09:34:55.248Z  INFO 7893 --- [coupon] [io-8080-exec-93] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 9
+2025-05-26T09:34:55.250Z  INFO 7893 --- [coupon] [io-8080-exec-93] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 9
+2025-05-26T09:34:55.258Z  INFO 7893 --- [coupon] [io-8080-exec-93] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 9
+2025-05-26T09:34:55.260Z  INFO 7893 --- [coupon] [io-8080-exec-84] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 50
+2025-05-26T09:34:55.262Z  INFO 7893 --- [coupon] [io-8080-exec-84] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 50
+2025-05-26T09:34:55.262Z  INFO 7893 --- [coupon] [io-8080-exec-84] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 50
+2025-05-26T09:34:55.263Z  INFO 7893 --- [coupon] [io-8080-exec-81] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 16
+2025-05-26T09:34:55.264Z  INFO 7893 --- [coupon] [io-8080-exec-84] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 50
+2025-05-26T09:34:55.265Z  INFO 7893 --- [coupon] [io-8080-exec-84] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 50
+2025-05-26T09:34:55.274Z  INFO 7893 --- [coupon] [io-8080-exec-84] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 50
+2025-05-26T09:34:55.276Z  INFO 7893 --- [coupon] [io-8080-exec-90] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 24
+2025-05-26T09:34:55.278Z  INFO 7893 --- [coupon] [io-8080-exec-92] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 34
+2025-05-26T09:34:55.279Z  INFO 7893 --- [coupon] [io-8080-exec-90] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 24
+2025-05-26T09:34:55.279Z  INFO 7893 --- [coupon] [io-8080-exec-90] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 24
+2025-05-26T09:34:55.280Z  INFO 7893 --- [coupon] [io-8080-exec-90] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 24
+2025-05-26T09:34:55.282Z  INFO 7893 --- [coupon] [io-8080-exec-90] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 24
+2025-05-26T09:34:55.291Z  INFO 7893 --- [coupon] [io-8080-exec-90] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 24
+2025-05-26T09:34:55.292Z  INFO 7893 --- [coupon] [io-8080-exec-51] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 35
+2025-05-26T09:34:55.295Z  INFO 7893 --- [coupon] [io-8080-exec-87] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 30
+2025-05-26T09:34:55.296Z  INFO 7893 --- [coupon] [io-8080-exec-51] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 35
+2025-05-26T09:34:55.296Z  INFO 7893 --- [coupon] [io-8080-exec-51] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 35
+2025-05-26T09:34:55.297Z  INFO 7893 --- [coupon] [io-8080-exec-51] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 35
+2025-05-26T09:34:55.299Z  INFO 7893 --- [coupon] [io-8080-exec-51] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 35
+2025-05-26T09:34:55.309Z  INFO 7893 --- [coupon] [io-8080-exec-51] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 35
+2025-05-26T09:34:55.310Z  INFO 7893 --- [coupon] [io-8080-exec-99] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 32
+2025-05-26T09:34:55.312Z  INFO 7893 --- [coupon] [o-8080-exec-104] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 42
+2025-05-26T09:34:55.313Z  INFO 7893 --- [coupon] [io-8080-exec-99] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 32
+2025-05-26T09:34:55.313Z  INFO 7893 --- [coupon] [io-8080-exec-99] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 32
+2025-05-26T09:34:55.315Z  INFO 7893 --- [coupon] [io-8080-exec-99] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 32
+2025-05-26T09:34:55.317Z  INFO 7893 --- [coupon] [io-8080-exec-99] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 32
+2025-05-26T09:34:55.325Z  INFO 7893 --- [coupon] [io-8080-exec-99] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 32
+2025-05-26T09:34:55.327Z  INFO 7893 --- [coupon] [io-8080-exec-82] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 20
+2025-05-26T09:34:55.329Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 11
+2025-05-26T09:34:55.330Z  INFO 7893 --- [coupon] [io-8080-exec-82] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 20
+2025-05-26T09:34:55.330Z  INFO 7893 --- [coupon] [io-8080-exec-82] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 20
+2025-05-26T09:34:55.331Z  INFO 7893 --- [coupon] [io-8080-exec-82] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 20
+2025-05-26T09:34:55.333Z  INFO 7893 --- [coupon] [io-8080-exec-82] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 20
+2025-05-26T09:34:55.343Z  INFO 7893 --- [coupon] [io-8080-exec-82] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 20
+2025-05-26T09:34:55.344Z  INFO 7893 --- [coupon] [io-8080-exec-86] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 3
+2025-05-26T09:34:55.346Z  INFO 7893 --- [coupon] [o-8080-exec-107] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 18
+2025-05-26T09:34:55.346Z  INFO 7893 --- [coupon] [io-8080-exec-86] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 3
+2025-05-26T09:34:55.346Z  INFO 7893 --- [coupon] [io-8080-exec-86] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 3
+2025-05-26T09:34:55.348Z  INFO 7893 --- [coupon] [io-8080-exec-86] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 3
+2025-05-26T09:34:55.349Z  INFO 7893 --- [coupon] [io-8080-exec-86] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 3
+2025-05-26T09:34:55.360Z  INFO 7893 --- [coupon] [io-8080-exec-86] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 3
+2025-05-26T09:34:55.361Z  INFO 7893 --- [coupon] [io-8080-exec-80] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 27
+2025-05-26T09:34:55.363Z  INFO 7893 --- [coupon] [o-8080-exec-105] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 43
+2025-05-26T09:34:55.363Z  INFO 7893 --- [coupon] [io-8080-exec-80] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 27
+2025-05-26T09:34:55.363Z  INFO 7893 --- [coupon] [io-8080-exec-80] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 27
+2025-05-26T09:34:55.365Z  INFO 7893 --- [coupon] [io-8080-exec-80] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 27
+2025-05-26T09:34:55.367Z  INFO 7893 --- [coupon] [io-8080-exec-80] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 27
+2025-05-26T09:34:55.377Z  INFO 7893 --- [coupon] [io-8080-exec-80] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 27
+2025-05-26T09:34:55.378Z  INFO 7893 --- [coupon] [io-8080-exec-98] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 10
+2025-05-26T09:34:55.380Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 19
+2025-05-26T09:34:55.381Z  INFO 7893 --- [coupon] [io-8080-exec-98] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 10
+2025-05-26T09:34:55.381Z  INFO 7893 --- [coupon] [io-8080-exec-98] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 10
+2025-05-26T09:34:55.383Z  INFO 7893 --- [coupon] [io-8080-exec-98] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 10
+2025-05-26T09:34:55.385Z  INFO 7893 --- [coupon] [io-8080-exec-98] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 10
+2025-05-26T09:34:55.395Z  INFO 7893 --- [coupon] [io-8080-exec-98] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 10
+2025-05-26T09:34:55.396Z  INFO 7893 --- [coupon] [io-8080-exec-48] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 15
+2025-05-26T09:34:55.399Z  INFO 7893 --- [coupon] [io-8080-exec-48] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 15
+2025-05-26T09:34:55.399Z  INFO 7893 --- [coupon] [io-8080-exec-48] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 15
+2025-05-26T09:34:55.401Z  INFO 7893 --- [coupon] [o-8080-exec-106] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 21
+2025-05-26T09:34:55.401Z  INFO 7893 --- [coupon] [io-8080-exec-48] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 15
+2025-05-26T09:34:55.403Z  INFO 7893 --- [coupon] [io-8080-exec-48] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 15
+2025-05-26T09:34:55.411Z  INFO 7893 --- [coupon] [io-8080-exec-48] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 15
+2025-05-26T09:34:55.415Z  INFO 7893 --- [coupon] [io-8080-exec-81] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 16
+2025-05-26T09:34:55.415Z  INFO 7893 --- [coupon] [o-8080-exec-108] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 33
+2025-05-26T09:34:55.423Z  INFO 7893 --- [coupon] [io-8080-exec-81] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 16
+2025-05-26T09:34:55.423Z  INFO 7893 --- [coupon] [io-8080-exec-81] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 16
+2025-05-26T09:34:55.424Z  INFO 7893 --- [coupon] [io-8080-exec-81] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 16
+2025-05-26T09:34:55.426Z  INFO 7893 --- [coupon] [io-8080-exec-81] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 16
+2025-05-26T09:34:55.441Z  INFO 7893 --- [coupon] [io-8080-exec-81] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 16
+2025-05-26T09:34:55.444Z  INFO 7893 --- [coupon] [io-8080-exec-92] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 34
+2025-05-26T09:34:55.445Z  INFO 7893 --- [coupon] [o-8080-exec-109] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 31
+2025-05-26T09:34:55.447Z  INFO 7893 --- [coupon] [io-8080-exec-92] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 34
+2025-05-26T09:34:55.447Z  INFO 7893 --- [coupon] [io-8080-exec-92] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 34
+2025-05-26T09:34:55.448Z  INFO 7893 --- [coupon] [io-8080-exec-92] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 34
+2025-05-26T09:34:55.450Z  INFO 7893 --- [coupon] [io-8080-exec-92] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 34
+2025-05-26T09:34:55.459Z  INFO 7893 --- [coupon] [io-8080-exec-92] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 34
+2025-05-26T09:34:55.461Z  INFO 7893 --- [coupon] [io-8080-exec-87] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 30
+2025-05-26T09:34:55.463Z  INFO 7893 --- [coupon] [o-8080-exec-110] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 36
+2025-05-26T09:34:55.464Z  INFO 7893 --- [coupon] [io-8080-exec-87] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 30
+2025-05-26T09:34:55.464Z  INFO 7893 --- [coupon] [io-8080-exec-87] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 30
+2025-05-26T09:34:55.465Z  INFO 7893 --- [coupon] [io-8080-exec-87] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 30
+2025-05-26T09:34:55.467Z  INFO 7893 --- [coupon] [io-8080-exec-87] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 30
+2025-05-26T09:34:55.475Z  INFO 7893 --- [coupon] [io-8080-exec-87] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 30
+2025-05-26T09:34:55.476Z  INFO 7893 --- [coupon] [o-8080-exec-104] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 42
+2025-05-26T09:34:55.479Z  INFO 7893 --- [coupon] [o-8080-exec-104] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 42
+2025-05-26T09:34:55.480Z  INFO 7893 --- [coupon] [o-8080-exec-104] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 42
+2025-05-26T09:34:55.481Z  INFO 7893 --- [coupon] [o-8080-exec-104] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 42
+2025-05-26T09:34:55.481Z  INFO 7893 --- [coupon] [o-8080-exec-111] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 40
+2025-05-26T09:34:55.484Z  INFO 7893 --- [coupon] [o-8080-exec-104] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 42
+2025-05-26T09:34:55.492Z  INFO 7893 --- [coupon] [o-8080-exec-104] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 42
+2025-05-26T09:34:55.494Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 11
+2025-05-26T09:34:55.496Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 17
+2025-05-26T09:34:55.496Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 11
+2025-05-26T09:34:55.496Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 11
+2025-05-26T09:34:55.498Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 11
+2025-05-26T09:34:55.500Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 11
+2025-05-26T09:34:55.508Z  INFO 7893 --- [coupon] [o-8080-exec-102] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 11
+2025-05-26T09:34:55.510Z  INFO 7893 --- [coupon] [o-8080-exec-107] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 18
+2025-05-26T09:34:55.512Z  INFO 7893 --- [coupon] [o-8080-exec-107] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 18
+2025-05-26T09:34:55.513Z  INFO 7893 --- [coupon] [o-8080-exec-107] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 18
+2025-05-26T09:34:55.513Z  INFO 7893 --- [coupon] [o-8080-exec-112] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 49
+2025-05-26T09:34:55.515Z  INFO 7893 --- [coupon] [o-8080-exec-107] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 18
+2025-05-26T09:34:55.517Z  INFO 7893 --- [coupon] [o-8080-exec-107] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 18
+2025-05-26T09:34:55.526Z  INFO 7893 --- [coupon] [o-8080-exec-107] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 18
+2025-05-26T09:34:55.529Z  INFO 7893 --- [coupon] [o-8080-exec-105] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 43
+2025-05-26T09:34:55.531Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 1
+2025-05-26T09:34:55.531Z  INFO 7893 --- [coupon] [o-8080-exec-105] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 43
+2025-05-26T09:34:55.531Z  INFO 7893 --- [coupon] [o-8080-exec-105] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 43
+2025-05-26T09:34:55.533Z  INFO 7893 --- [coupon] [o-8080-exec-105] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 43
+2025-05-26T09:34:55.534Z  INFO 7893 --- [coupon] [o-8080-exec-105] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 43
+2025-05-26T09:34:55.544Z  INFO 7893 --- [coupon] [o-8080-exec-105] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 43
+2025-05-26T09:34:55.545Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 19
+2025-05-26T09:34:55.548Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 19
+2025-05-26T09:34:55.548Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 19
+2025-05-26T09:34:55.548Z  INFO 7893 --- [coupon] [o-8080-exec-113] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 14
+2025-05-26T09:34:55.550Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 19
+2025-05-26T09:34:55.552Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 19
+2025-05-26T09:34:55.560Z  INFO 7893 --- [coupon] [io-8080-exec-36] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 19
+2025-05-26T09:34:55.562Z  INFO 7893 --- [coupon] [o-8080-exec-106] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 21
+2025-05-26T09:34:55.564Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 37
+2025-05-26T09:34:55.564Z  INFO 7893 --- [coupon] [o-8080-exec-106] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 21
+2025-05-26T09:34:55.564Z  INFO 7893 --- [coupon] [o-8080-exec-106] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 21
+2025-05-26T09:34:55.565Z  INFO 7893 --- [coupon] [o-8080-exec-106] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 21
+2025-05-26T09:34:55.567Z  INFO 7893 --- [coupon] [o-8080-exec-106] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 21
+2025-05-26T09:34:55.576Z  INFO 7893 --- [coupon] [o-8080-exec-106] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 21
+2025-05-26T09:34:55.577Z  INFO 7893 --- [coupon] [o-8080-exec-108] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 33
+2025-05-26T09:34:55.579Z  INFO 7893 --- [coupon] [o-8080-exec-108] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 33
+2025-05-26T09:34:55.580Z  INFO 7893 --- [coupon] [o-8080-exec-108] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 33
+2025-05-26T09:34:55.580Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 7
+2025-05-26T09:34:55.581Z  INFO 7893 --- [coupon] [o-8080-exec-108] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 33
+2025-05-26T09:34:55.582Z  INFO 7893 --- [coupon] [o-8080-exec-108] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 33
+2025-05-26T09:34:55.592Z  INFO 7893 --- [coupon] [o-8080-exec-108] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 33
+2025-05-26T09:34:55.593Z  INFO 7893 --- [coupon] [o-8080-exec-109] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 31
+2025-05-26T09:34:55.595Z  INFO 7893 --- [coupon] [o-8080-exec-109] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 31
+2025-05-26T09:34:55.596Z  INFO 7893 --- [coupon] [o-8080-exec-109] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 31
+2025-05-26T09:34:55.596Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 46
+2025-05-26T09:34:55.597Z  INFO 7893 --- [coupon] [o-8080-exec-109] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 31
+2025-05-26T09:34:55.598Z  INFO 7893 --- [coupon] [o-8080-exec-109] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 31
+2025-05-26T09:34:55.608Z  INFO 7893 --- [coupon] [o-8080-exec-109] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 31
+2025-05-26T09:34:55.610Z  INFO 7893 --- [coupon] [o-8080-exec-110] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 36
+2025-05-26T09:34:55.612Z  INFO 7893 --- [coupon] [o-8080-exec-110] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 36
+2025-05-26T09:34:55.612Z  INFO 7893 --- [coupon] [o-8080-exec-110] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 36
+2025-05-26T09:34:55.614Z  INFO 7893 --- [coupon] [o-8080-exec-110] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 36
+2025-05-26T09:34:55.615Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 28
+2025-05-26T09:34:55.628Z  INFO 7893 --- [coupon] [o-8080-exec-110] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 36
+2025-05-26T09:34:55.638Z  INFO 7893 --- [coupon] [o-8080-exec-110] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 36
+2025-05-26T09:34:55.640Z  INFO 7893 --- [coupon] [o-8080-exec-111] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 40
+2025-05-26T09:34:55.642Z  INFO 7893 --- [coupon] [o-8080-exec-111] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 40
+2025-05-26T09:34:55.642Z  INFO 7893 --- [coupon] [o-8080-exec-111] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 40
+2025-05-26T09:34:55.644Z  INFO 7893 --- [coupon] [o-8080-exec-111] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 40
+2025-05-26T09:34:55.644Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.m.coupon.service.CouponService     : redis lock 획득 시도 memberId: 44
+2025-05-26T09:34:55.646Z  INFO 7893 --- [coupon] [o-8080-exec-111] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 40
+2025-05-26T09:34:55.655Z  INFO 7893 --- [coupon] [o-8080-exec-111] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 40
+2025-05-26T09:34:55.657Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 17
+2025-05-26T09:34:55.659Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 17
+2025-05-26T09:34:55.660Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 17
+2025-05-26T09:34:55.661Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 17
+2025-05-26T09:34:55.663Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 17
+2025-05-26T09:34:55.670Z  INFO 7893 --- [coupon] [io-8080-exec-79] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 17
+2025-05-26T09:34:55.671Z  INFO 7893 --- [coupon] [o-8080-exec-112] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 49
+2025-05-26T09:34:55.674Z  INFO 7893 --- [coupon] [o-8080-exec-112] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 49
+2025-05-26T09:34:55.674Z  INFO 7893 --- [coupon] [o-8080-exec-112] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 49
+2025-05-26T09:34:55.675Z  INFO 7893 --- [coupon] [o-8080-exec-112] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 49
+2025-05-26T09:34:55.677Z  INFO 7893 --- [coupon] [o-8080-exec-112] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 49
+2025-05-26T09:34:55.687Z  INFO 7893 --- [coupon] [o-8080-exec-112] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 49
+2025-05-26T09:34:55.689Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 1
+2025-05-26T09:34:55.692Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 1
+2025-05-26T09:34:55.692Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 1
+2025-05-26T09:34:55.694Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 1
+2025-05-26T09:34:55.695Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 1
+2025-05-26T09:34:55.705Z  INFO 7893 --- [coupon] [o-8080-exec-101] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 1
+2025-05-26T09:34:55.706Z  INFO 7893 --- [coupon] [o-8080-exec-113] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 14
+2025-05-26T09:34:55.709Z  INFO 7893 --- [coupon] [o-8080-exec-113] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 14
+2025-05-26T09:34:55.709Z  INFO 7893 --- [coupon] [o-8080-exec-113] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 14
+2025-05-26T09:34:55.710Z  INFO 7893 --- [coupon] [o-8080-exec-113] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 14
+2025-05-26T09:34:55.712Z  INFO 7893 --- [coupon] [o-8080-exec-113] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 14
+2025-05-26T09:34:55.720Z  INFO 7893 --- [coupon] [o-8080-exec-113] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 14
+2025-05-26T09:34:55.721Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 37
+2025-05-26T09:34:55.724Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 37
+2025-05-26T09:34:55.724Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 37
+2025-05-26T09:34:55.725Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 37
+2025-05-26T09:34:55.727Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 37
+2025-05-26T09:34:55.734Z  INFO 7893 --- [coupon] [o-8080-exec-114] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 37
+2025-05-26T09:34:55.736Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 7
+2025-05-26T09:34:55.738Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 7
+2025-05-26T09:34:55.739Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 7
+2025-05-26T09:34:55.740Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 7
+2025-05-26T09:34:55.742Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 7
+2025-05-26T09:34:55.751Z  INFO 7893 --- [coupon] [o-8080-exec-115] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 7
+2025-05-26T09:34:55.752Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 46
+2025-05-26T09:34:55.755Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 46
+2025-05-26T09:34:55.755Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 46
+2025-05-26T09:34:55.756Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 46
+2025-05-26T09:34:55.758Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 46
+2025-05-26T09:34:55.766Z  INFO 7893 --- [coupon] [io-8080-exec-95] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 46
+2025-05-26T09:34:55.768Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 28
+2025-05-26T09:34:55.770Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 28
+2025-05-26T09:34:55.770Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 28
+2025-05-26T09:34:55.771Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 28
+2025-05-26T09:34:55.773Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 28
+2025-05-26T09:34:55.783Z  INFO 7893 --- [coupon] [o-8080-exec-116] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 28
+2025-05-26T09:34:55.784Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.m.coupon.service.CouponService     : redis lock 획득 memberId: 44
+2025-05-26T09:34:55.786Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.module.coupon.tool.CouponWriter    : coupon 조회 memberId: 44
+2025-05-26T09:34:55.787Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.module.coupon.tool.CouponWriter    : coupon 갯수 감소 memberId: 44
+2025-05-26T09:34:55.788Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.module.coupon.tool.CouponWriter    : memberCoupon 저장 시도 memberId: 44
+2025-05-26T09:34:55.790Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.module.coupon.tool.CouponWriter    : 쿠폰 발급 완료 memberId: 44
+2025-05-26T09:34:55.799Z  INFO 7893 --- [coupon] [o-8080-exec-117] c.s.c.m.coupon.service.CouponService     : redis unlock memberId: 44
