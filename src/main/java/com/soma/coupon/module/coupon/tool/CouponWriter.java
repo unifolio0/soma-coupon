@@ -7,7 +7,6 @@ import com.soma.coupon.module.coupon.repository.CouponRepository;
 import com.soma.coupon.module.coupon.repository.MemberCouponRepository;
 import com.soma.coupon.module.user.domain.Member;
 import com.soma.coupon.module.user.repository.MemberRepository;
-import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -64,14 +63,6 @@ public class CouponWriter {
         MemberCoupon savedMemberCoupon = memberCouponRepository.save(memberCoupon);
         log.info("쿠폰 발급 완료 memberId: {}", request.userId());
         return savedMemberCoupon;
-    }
-
-    public List<MemberCoupon> getUserCoupons(Long userId) {
-        return memberCouponRepository.findByMemberId(userId);
-    }
-
-    public List<Coupon> getCoupons() {
-        return couponRepository.findAll();
     }
 
     @Transactional

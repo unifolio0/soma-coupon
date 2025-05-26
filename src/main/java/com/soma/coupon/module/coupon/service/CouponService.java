@@ -1,16 +1,16 @@
 package com.soma.coupon.module.coupon.service;
 
+import com.soma.coupon.common.redis.DistributedLock;
 import com.soma.coupon.module.admin.dto.CreateCouponRequest;
 import com.soma.coupon.module.coupon.domain.Coupon;
 import com.soma.coupon.module.coupon.domain.MemberCoupon;
 import com.soma.coupon.module.coupon.dto.IssueCouponRequest;
 import com.soma.coupon.module.coupon.dto.UseCouponRequest;
+import com.soma.coupon.module.coupon.tool.CouponReader;
 import com.soma.coupon.module.coupon.tool.CouponWriter;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.redisson.api.RLock;
-import org.redisson.api.RedissonClient;
 import org.springframework.stereotype.Service;
 
 @Slf4j
@@ -19,7 +19,7 @@ import org.springframework.stereotype.Service;
 public class CouponService {
 
     private final CouponWriter couponWriter;
-    private final RedissonClient redissonClient;
+    private final CouponReader couponReader;
 
     public Coupon create(CreateCouponRequest request) {
         Coupon coupon = request.toDomain();
@@ -30,26 +30,17 @@ public class CouponService {
         return couponWriter.issueForXLock(request);
     }
 
+    @DistributedLock(key = "#request.couponId()")
     public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
-        String lockName = request.couponId() + ":lock";
-        RLock lock = redissonClient.getLock(lockName);
-        log.info("redis lock 획득 시도 memberId: {}", request.userId());
-        lock.lock();
-        log.info("redis lock 획득 memberId: {}", request.userId());
-        try {
-            return couponWriter.issueForRedisLock(request);
-        } finally {
-            log.info("redis unlock memberId: {}", request.userId());
-            lock.unlock();
-        }
+        return couponWriter.issueForRedisLock(request);
     }
 
     public List<MemberCoupon> getUserCoupons(Long userId) {
-        return couponWriter.getUserCoupons(userId);
+        return couponReader.getUserCoupons(userId);
     }
 
     public List<Coupon> getCoupons() {
-        return couponWriter.getCoupons().stream()
+        return couponReader.getCoupons().stream()
                 .filter(coupon -> !coupon.isExpired())
                 .toList();
     }
@@ -58,14 +49,8 @@ public class CouponService {
         return couponWriter.usedForXLock(request.memberCouponId(), request.memberId());
     }
 
+    @DistributedLock(key = "'couponId:' + #request.memberCouponId() + ':memberId:' + #request.memberId()")
     public MemberCoupon useForRedisLock(UseCouponRequest request) {
-        String lockName = "couponId:" + request.memberCouponId() + "memberId:" + request.memberId() + ":lock";
-        RLock lock = redissonClient.getLock(lockName);
-        lock.lock();
-        try {
-            return couponWriter.usedForRedisLock(request.memberCouponId(), request.memberId());
-        } finally {
-            lock.unlock();
-        }
+        return couponWriter.usedForRedisLock(request.memberCouponId(), request.memberId());
     }
 }

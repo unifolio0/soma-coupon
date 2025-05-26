@@ -1,4 +1,4 @@
-package com.soma.coupon.common;
+package com.soma.coupon.common.redis;
 
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
