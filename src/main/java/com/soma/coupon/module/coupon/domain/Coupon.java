@@ -35,15 +35,24 @@ public class Coupon {
         this.expireTime = expireTime;
     }
 
+    public void decrease() {
+        count--;
+    }
+
+    public void validateIssuable() {
+        if (isExpired()) {
+            throw new IllegalArgumentException("쿠폰이 만료되었습니다.");
+        }
+        if (!issuable()) {
+            throw new IllegalArgumentException("모두 소진된 쿠폰입니다.");
+        }
+    }
+
     public boolean isExpired() {
         return expireTime.isBefore(LocalDateTime.now());
     }
 
-    public boolean issuable() {
+    private boolean issuable() {
         return count > 0;
-    }
-
-    public void decrease() {
-        count--;
     }
 }

@@ -39,16 +39,25 @@ public class MemberCoupon {
         this.usedAt = LocalDateTime.now();
     }
 
-    public boolean usable() {
-        return !used && !coupon.isExpired();
-    }
-
     public void use() {
         used = true;
         usedAt = LocalDateTime.now();
     }
 
-    public boolean isOwner(Long memberId) {
+    public void validateUsable(Long memberId) {
+        if (!isOwner(memberId)) {
+            throw new IllegalArgumentException("쿠폰을 발급받은 회원이 아닙니다.");
+        }
+        if (!usable()) {
+            throw new IllegalArgumentException("쿠폰을 사용할 수 없습니다.");
+        }
+    }
+
+    private boolean isOwner(Long memberId) {
         return member.getId().equals(memberId);
+    }
+
+    private boolean usable() {
+        return !used && !coupon.isExpired();
     }
 }

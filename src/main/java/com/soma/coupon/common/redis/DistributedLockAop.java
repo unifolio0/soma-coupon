@@ -8,8 +8,10 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+@Order(1)
 @Aspect
 @Component
 @RequiredArgsConstructor
@@ -27,7 +29,6 @@ public class DistributedLockAop {
 
         String key = REDISSON_LOCK_PREFIX + CustomSpringELParser.getDynamicValue(signature.getParameterNames(),
                 joinPoint.getArgs(), distributedLock.key());
-        System.out.println(key);
         RLock lock = redissonClient.getLock(key);
 
         lock.lock();
