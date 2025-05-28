@@ -1,4 +1,4 @@
-package com.soma.coupon.common.redis;
+package com.soma.coupon.common.redis.lock;
 
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;

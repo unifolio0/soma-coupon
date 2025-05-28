@@ -1,4 +1,4 @@
-package com.soma.coupon.common.redis;
+package com.soma.coupon.common.redis.lock;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

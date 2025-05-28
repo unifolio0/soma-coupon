@@ -1,6 +1,6 @@
 package com.soma.coupon.module.coupon.service;
 
-import com.soma.coupon.common.redis.DistributedLock;
+import com.soma.coupon.common.redis.lock.DistributedLock;
 import com.soma.coupon.module.admin.dto.CreateCouponRequest;
 import com.soma.coupon.module.coupon.domain.Coupon;
 import com.soma.coupon.module.coupon.domain.MemberCoupon;

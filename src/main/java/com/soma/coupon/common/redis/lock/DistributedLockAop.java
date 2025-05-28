@@ -1,4 +1,4 @@
-package com.soma.coupon.common.redis;
+package com.soma.coupon.common.redis.lock;
 
 import java.lang.reflect.Method;
 import lombok.RequiredArgsConstructor;
@@ -21,7 +21,7 @@ public class DistributedLockAop {
 
     private final RedissonClient redissonClient;
 
-    @Around("@annotation(com.soma.coupon.common.redis.DistributedLock)")
+    @Around("@annotation(com.soma.coupon.common.redis.lock.DistributedLock)")
     public Object lock(ProceedingJoinPoint joinPoint) throws Throwable {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();
