@@ -14,11 +14,9 @@ import com.soma.coupon.module.user.domain.Member;
 import com.soma.coupon.module.user.tool.MemberReader;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-@Slf4j
 @Service
 @RequiredArgsConstructor
 public class CouponService {
@@ -36,35 +34,23 @@ public class CouponService {
 
     @Transactional
     public MemberCoupon issueForXLock(IssueCouponRequest request) {
-        log.info("쿠폰 발급 내역 조회 memberId: {}", request.userId());
         memberCouponReader.alreadyIssued(request.userId(), request.couponId());
         Member member = memberReader.getMemberById(request.userId());
-        log.info("x lock 획득 시도 memberId: {}", member.getId());
         Coupon coupon = couponReader.getCouponByIdForUpdate(request.couponId());
-        log.info("x lock 획득 memberId: {}", member.getId());
         coupon.validateIssuable();
         coupon.decrease();
-        log.info("coupon 갯수 감소 memberId: {}", member.getId());
-        log.info("memberCoupon 저장 시도 memberId: {}", member.getId());
-        MemberCoupon savedMemberCoupon = memberCouponWriter.save(member, coupon);
-        log.info("쿠폰 발급 완료 memberId: {}", member.getId());
-        return savedMemberCoupon;
+        return memberCouponWriter.save(member, coupon);
     }
 
     @DistributedLock(key = "#request.couponId()")
     @Transactional
     public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
-        log.info("쿠폰 발급 내역 조회 memberId: {}", request.userId());
         memberCouponReader.alreadyIssued(request.userId(), request.couponId());
         Member member = memberReader.getMemberById(request.userId());
         Coupon coupon = couponReader.getCouponById(request.couponId());
         coupon.validateIssuable();
         coupon.decrease();
-        log.info("coupon 갯수 감소 memberId: {}", member.getId());
-        log.info("memberCoupon 저장 시도 memberId: {}", member.getId());
-        MemberCoupon savedMemberCoupon = memberCouponWriter.save(member, coupon);
-        log.info("쿠폰 발급 완료 memberId: {}", member.getId());
-        return savedMemberCoupon;
+        return memberCouponWriter.save(member, coupon);
     }
 
     public List<MemberCoupon> getUserCoupons(Long userId) {
