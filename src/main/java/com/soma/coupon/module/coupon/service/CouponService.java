@@ -71,7 +71,7 @@ public class CouponService {
         return memberCoupon;
     }
 
-    @DistributedLock(key = "'couponId:' + #request.memberCouponId() + ':memberId:' + #request.memberId()")
+    @DistributedLock(key = "'memberId:' + #request.memberId() + ':couponId:' + #request.memberCouponId()")
     @Transactional
     public MemberCoupon useForRedisLock(UseCouponRequest request) {
         MemberCoupon memberCoupon = memberCouponReader.getMemberCouponById(request.memberCouponId());
