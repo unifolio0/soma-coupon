@@ -7,6 +7,7 @@ import com.soma.coupon.module.coupon.domain.MemberCoupon;
 import com.soma.coupon.module.coupon.dto.IssueCouponRequest;
 import com.soma.coupon.module.coupon.dto.UseCouponRequest;
 import com.soma.coupon.module.coupon.tool.CouponReader;
+import com.soma.coupon.module.coupon.tool.CouponRedisManager;
 import com.soma.coupon.module.coupon.tool.CouponWriter;
 import com.soma.coupon.module.coupon.tool.MemberCouponReader;
 import com.soma.coupon.module.coupon.tool.MemberCouponWriter;
@@ -26,9 +27,11 @@ public class CouponService {
     private final MemberReader memberReader;
     private final MemberCouponReader memberCouponReader;
     private final MemberCouponWriter memberCouponWriter;
+    private final CouponRedisManager couponRedisManager;
 
     public Coupon create(CreateCouponRequest request) {
         Coupon coupon = request.toDomain();
+        couponRedisManager.cachingCoupon(coupon);
         return couponWriter.create(coupon);
     }
 
