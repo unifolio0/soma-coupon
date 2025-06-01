@@ -25,11 +25,11 @@ public class CouponReader {
 
     public Coupon getCouponByIdForUpdate(Long couponId) {
         return couponRepository.findByIdForUpdate(couponId)
-                .orElseThrow(() -> new IllegalArgumentException("Coupon not found with id: " + couponId));
+                .orElseThrow(() -> new IllegalArgumentException("쿠폰을 찾을 수 없습니다. 쿠폰 id: " + couponId));
     }
 
     public Coupon getCouponById(Long couponId) {
         return couponRepository.findById(couponId)
-                .orElseThrow(() -> new IllegalArgumentException("Coupon not found with id: " + couponId));
+                .orElseThrow(() -> new IllegalArgumentException("쿠폰을 찾을 수 없습니다. 쿠폰 id: " + couponId));
     }
 }

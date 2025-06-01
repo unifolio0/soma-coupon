@@ -19,11 +19,11 @@ public class MemberCouponReader {
 
     public MemberCoupon getMemberCouponById(Long memberCouponId) {
         return memberCouponRepository.findById(memberCouponId)
-                .orElseThrow(() -> new IllegalArgumentException("MemberCoupon not found with id: " + memberCouponId));
+                .orElseThrow(() -> new IllegalArgumentException("쿠폰을 찾을 수 없습니다. 쿠폰 id: " + memberCouponId));
     }
 
     public MemberCoupon getMemberCouponByIdForUpdate(Long memberCouponId) {
         return memberCouponRepository.findByIdForUpdate(memberCouponId)
-                .orElseThrow(() -> new IllegalArgumentException("MemberCoupon not found with id: " + memberCouponId));
+                .orElseThrow(() -> new IllegalArgumentException("쿠폰을 찾을 수 없습니다. 쿠폰 id: " + memberCouponId));
     }
 }
