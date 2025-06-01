@@ -45,12 +45,13 @@ public class CouponService {
         return memberCouponWriter.save(member, coupon);
     }
 
-    @DistributedLock(key = "#request.couponId()")
     @Transactional
     public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
         memberCouponReader.alreadyIssued(request.userId(), request.couponId());
+        couponRedisManager.isProcessing(request.userId(), request.couponId());
         Member member = memberReader.getMemberById(request.userId());
         Coupon coupon = couponReader.getCouponById(request.couponId());
+        couponRedisManager.decreaseCount(coupon);
         coupon.validateIssuable();
         coupon.decrease();
         return memberCouponWriter.save(member, coupon);

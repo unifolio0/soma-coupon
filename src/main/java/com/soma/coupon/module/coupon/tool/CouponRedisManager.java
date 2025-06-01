@@ -1,7 +1,9 @@
 package com.soma.coupon.module.coupon.tool;
 
 import com.soma.coupon.module.coupon.domain.Coupon;
+import java.time.Duration;
 import lombok.RequiredArgsConstructor;
+import org.redisson.api.RAtomicLong;
 import org.redisson.api.RBucket;
 import org.redisson.api.RedissonClient;
 import org.springframework.stereotype.Component;
@@ -11,11 +13,26 @@ import org.springframework.stereotype.Component;
 public class CouponRedisManager {
 
     private static final String COUPON_KEY_FORMAT = "coupon:%s";
+    private static final String MEMBER_COUPON_KEY_FORMAT = "member:%s:coupon:%s";
 
     private final RedissonClient redissonClient;
 
     public void cachingCoupon(Coupon coupon) {
         RBucket<Long> bucket = redissonClient.getBucket(String.format(COUPON_KEY_FORMAT, coupon.getId()));
         bucket.set(coupon.getCount());
+    }
+
+    public void isProcessing(Long memberId, Long couponId) {
+        RBucket<String> bucket = redissonClient.getBucket(String.format(MEMBER_COUPON_KEY_FORMAT, memberId, couponId));
+        if (!bucket.setIfAbsent("1", Duration.ofMinutes(1))) {
+            throw new IllegalArgumentException("이미 발급받은 쿠폰입니다");
+        }
+    }
+
+    public void decreaseCount(Coupon coupon) {
+        RAtomicLong atomicLong = redissonClient.getAtomicLong(String.format(COUPON_KEY_FORMAT, coupon.getId()));
+        if (atomicLong.decrementAndGet() < 0) {
+            throw new IllegalArgumentException("모두 소진된 쿠폰입니다.");
+        }
     }
 }
