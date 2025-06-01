@@ -18,13 +18,13 @@ public class CouponRedisManager {
     private final RedissonClient redissonClient;
 
     public void cachingCoupon(Coupon coupon) {
-        RBucket<Long> bucket = redissonClient.getBucket(String.format(COUPON_KEY_FORMAT, coupon.getId()));
+        RAtomicLong bucket = redissonClient.getAtomicLong(String.format(COUPON_KEY_FORMAT, coupon.getId()));
         bucket.set(coupon.getCount());
     }
 
     public void isProcessing(Long memberId, Long couponId) {
         RBucket<String> bucket = redissonClient.getBucket(String.format(MEMBER_COUPON_KEY_FORMAT, memberId, couponId));
-        if (!bucket.setIfAbsent("1", Duration.ofMinutes(1))) {
+        if (!bucket.setIfAbsent("1", Duration.ofSeconds(10))) {
             throw new IllegalArgumentException("해당 작업이 진행 중 입니다.");
         }
     }
@@ -34,5 +34,10 @@ public class CouponRedisManager {
         if (atomicLong.decrementAndGet() < 0) {
             throw new IllegalArgumentException("모두 소진된 쿠폰입니다.");
         }
+    }
+
+    public long getCouponCount(Long couponId) {
+        RAtomicLong atomicLong = redissonClient.getAtomicLong(String.format(COUPON_KEY_FORMAT, couponId));
+        return atomicLong.get();
     }
 }

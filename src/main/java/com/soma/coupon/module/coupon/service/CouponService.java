@@ -5,6 +5,7 @@ import com.soma.coupon.module.coupon.domain.Coupon;
 import com.soma.coupon.module.coupon.domain.MemberCoupon;
 import com.soma.coupon.module.coupon.dto.IssueCouponRequest;
 import com.soma.coupon.module.coupon.dto.UseCouponRequest;
+import com.soma.coupon.module.coupon.tool.CouponAsyncWriter;
 import com.soma.coupon.module.coupon.tool.CouponReader;
 import com.soma.coupon.module.coupon.tool.CouponRedisManager;
 import com.soma.coupon.module.coupon.tool.CouponWriter;
@@ -27,11 +28,13 @@ public class CouponService {
     private final MemberCouponReader memberCouponReader;
     private final MemberCouponWriter memberCouponWriter;
     private final CouponRedisManager couponRedisManager;
+    private final CouponAsyncWriter couponAsyncWriter;
 
     public Coupon create(CreateCouponRequest request) {
         Coupon coupon = request.toDomain();
-        couponRedisManager.cachingCoupon(coupon);
-        return couponWriter.create(coupon);
+        Coupon savedCoupon = couponWriter.create(coupon);
+        couponRedisManager.cachingCoupon(savedCoupon);
+        return savedCoupon;
     }
 
     @Transactional
@@ -52,7 +55,7 @@ public class CouponService {
         Coupon coupon = couponReader.getCouponById(request.couponId());
         couponRedisManager.decreaseCount(coupon);
         coupon.validateIssuable();
-        coupon.decrease();
+        couponAsyncWriter.decreaseAvailableCount(coupon.getId());
         return memberCouponWriter.save(member, coupon);
     }
 

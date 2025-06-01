@@ -1,21 +1,20 @@
 package com.soma.coupon.module.coupon.tool;
 
-import com.soma.coupon.module.coupon.domain.Coupon;
 import com.soma.coupon.module.coupon.repository.CouponRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 @Component
 @RequiredArgsConstructor
-public class CouponWriter {
+public class CouponAsyncWriter {
 
     private final CouponRepository couponRepository;
 
-    public Coupon create(Coupon coupon) {
-        return couponRepository.save(coupon);
-    }
-
-    public void decreaseAvailableCount(Long id) {
-        couponRepository.decreaseAvailableCount(id);
+    @Async
+    @Transactional
+    public void decreaseAvailableCount(Long couponId) {
+        couponRepository.decreaseAvailableCount(couponId);
     }
 }
