@@ -1,6 +1,5 @@
 package com.soma.coupon.module.coupon.service;
 
-import com.soma.coupon.common.redis.lock.DistributedLock;
 import com.soma.coupon.module.admin.dto.CreateCouponRequest;
 import com.soma.coupon.module.coupon.domain.Coupon;
 import com.soma.coupon.module.coupon.domain.MemberCoupon;
@@ -37,8 +36,8 @@ public class CouponService {
 
     @Transactional
     public MemberCoupon issueForXLock(IssueCouponRequest request) {
-        memberCouponReader.alreadyIssued(request.userId(), request.couponId());
-        Member member = memberReader.getMemberById(request.userId());
+        memberCouponReader.alreadyIssued(request.memberId(), request.couponId());
+        Member member = memberReader.getMemberById(request.memberId());
         Coupon coupon = couponReader.getCouponByIdForUpdate(request.couponId());
         coupon.validateIssuable();
         coupon.decrease();
@@ -47,9 +46,9 @@ public class CouponService {
 
     @Transactional
     public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
-        memberCouponReader.alreadyIssued(request.userId(), request.couponId());
-        couponRedisManager.isProcessing(request.userId(), request.couponId());
-        Member member = memberReader.getMemberById(request.userId());
+        couponRedisManager.isProcessing(request.memberId(), request.couponId());
+        memberCouponReader.alreadyIssued(request.memberId(), request.couponId());
+        Member member = memberReader.getMemberById(request.memberId());
         Coupon coupon = couponReader.getCouponById(request.couponId());
         couponRedisManager.decreaseCount(coupon);
         coupon.validateIssuable();
@@ -75,9 +74,9 @@ public class CouponService {
         return memberCoupon;
     }
 
-    @DistributedLock(key = "'memberId:' + #request.memberId() + ':couponId:' + #request.memberCouponId()")
     @Transactional
     public MemberCoupon useForRedisLock(UseCouponRequest request) {
+        couponRedisManager.isProcessing(request.memberId(), request.memberCouponId());
         MemberCoupon memberCoupon = memberCouponReader.getMemberCouponById(request.memberCouponId());
         memberCoupon.validateUsable(request.memberId());
         memberCoupon.use();

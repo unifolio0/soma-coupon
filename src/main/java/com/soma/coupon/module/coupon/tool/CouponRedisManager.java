@@ -25,7 +25,7 @@ public class CouponRedisManager {
     public void isProcessing(Long memberId, Long couponId) {
         RBucket<String> bucket = redissonClient.getBucket(String.format(MEMBER_COUPON_KEY_FORMAT, memberId, couponId));
         if (!bucket.setIfAbsent("1", Duration.ofMinutes(1))) {
-            throw new IllegalArgumentException("발급 중 입니다.");
+            throw new IllegalArgumentException("해당 작업이 진행 중 입니다.");
         }
     }
 
