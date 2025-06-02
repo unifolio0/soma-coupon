@@ -15,6 +15,6 @@ public class CouponAsyncWriter {
     @Async
     @Transactional
     public void decreaseAvailableCount(Long couponId) {
-        couponRepository.decreaseAvailableCount(couponId);
+        couponRepository.decreaseCount(couponId);
     }
 }

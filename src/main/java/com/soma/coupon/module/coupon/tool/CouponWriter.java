@@ -16,6 +16,6 @@ public class CouponWriter {
     }
 
     public void decreaseAvailableCount(Long id) {
-        couponRepository.decreaseAvailableCount(id);
+        couponRepository.decreaseCount(id);
     }
 }

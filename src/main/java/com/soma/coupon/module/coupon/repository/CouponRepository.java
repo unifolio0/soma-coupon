@@ -17,5 +17,5 @@ public interface CouponRepository extends JpaRepository<Coupon, Long> {
 
     @Modifying
     @Query("update Coupon c set c.count = c.count - 1 where c.id = :couponId")
-    void decreaseAvailableCount(long couponId);
+    void decreaseCount(long couponId);
 }
