@@ -22,6 +22,12 @@ public class CouponController {
     private final CouponService couponService;
 
     @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping("api/coupon/issue/async")
+    public MemberCoupon issueCouponForAsync(@RequestBody IssueCouponRequest request) {
+        return couponService.issueForAsync(request);
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("api/coupon/issue/redis")
     public MemberCoupon issueCouponForRedis(@RequestBody IssueCouponRequest request) {
         return couponService.issueForRedisLock(request);

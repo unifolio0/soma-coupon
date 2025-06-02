@@ -48,7 +48,7 @@ public class CouponService {
     }
 
     @Transactional
-    public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
+    public MemberCoupon issueForAsync(IssueCouponRequest request) {
         couponRedisManager.isProcessing(request.memberId(), request.couponId());
         memberCouponReader.alreadyIssued(request.memberId(), request.couponId());
         Member member = memberReader.getMemberById(request.memberId());
@@ -56,6 +56,18 @@ public class CouponService {
         couponRedisManager.decreaseCount(coupon);
         coupon.validateIssuable();
         couponAsyncWriter.decreaseAvailableCount(coupon.getId());
+        return memberCouponWriter.save(member, coupon);
+    }
+
+    @Transactional
+    public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
+        couponRedisManager.isProcessing(request.memberId(), request.couponId());
+        memberCouponReader.alreadyIssued(request.memberId(), request.couponId());
+        Member member = memberReader.getMemberById(request.memberId());
+        Coupon coupon = couponReader.getCouponById(request.couponId());
+        couponRedisManager.decreaseCount(coupon);
+        coupon.validateIssuable();
+        couponWriter.decreaseAvailableCount(coupon.getId());
         return memberCouponWriter.save(member, coupon);
     }
 
