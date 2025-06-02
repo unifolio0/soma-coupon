@@ -1,8 +1,3 @@
-INSERT INTO coupon (name, count, coupon_type, expire_time)
-VALUES ('치킨 쿠폰', 10000, 'CHICKEN', '2025-06-30 23:59:59'),
-       ('피자 쿠폰', 10000, 'PIZZA', '2025-06-30 23:59:59'),
-       ('햄버거 쿠폰', 10000, 'HAMBURGER', '2025-06-30 23:59:59');
-
 INSERT INTO member (name, password, role)
 SELECT
     CONCAT('user_', LPAD(FLOOR(RAND() * 1000000), 6, '0')) AS name,
