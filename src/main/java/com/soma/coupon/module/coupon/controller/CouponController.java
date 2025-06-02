@@ -28,8 +28,14 @@ public class CouponController {
     }
 
     @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping("api/coupon/issue/not-async")
+    public MemberCoupon issueCouponForNotAsync(@RequestBody IssueCouponRequest request) {
+        return couponService.issueForNotAsync(request);
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("api/coupon/issue/redis")
-    public MemberCoupon issueCouponForRedis(@RequestBody IssueCouponRequest request) {
+    public MemberCoupon issueCouponForRedisLock(@RequestBody IssueCouponRequest request) {
         return couponService.issueForRedisLock(request);
     }
 

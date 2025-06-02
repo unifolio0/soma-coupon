@@ -70,7 +70,7 @@ class CouponServiceTest {
             Member member = members.get(i);
             executor.submit(() -> {
                 try {
-                    couponService.issueForRedisLock(new IssueCouponRequest(member.getId(), coupon.getId()));
+                    couponService.issueForNotAsync(new IssueCouponRequest(member.getId(), coupon.getId()));
                 } catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
                     exceptions.add(e);

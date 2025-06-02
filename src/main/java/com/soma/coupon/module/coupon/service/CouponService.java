@@ -1,5 +1,6 @@
 package com.soma.coupon.module.coupon.service;
 
+import com.soma.coupon.common.redis.lock.DistributedLock;
 import com.soma.coupon.module.admin.dto.CreateCouponRequest;
 import com.soma.coupon.module.coupon.domain.Coupon;
 import com.soma.coupon.module.coupon.domain.MemberCoupon;
@@ -60,12 +61,23 @@ public class CouponService {
     }
 
     @Transactional
-    public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
+    public MemberCoupon issueForNotAsync(IssueCouponRequest request) {
         couponRedisManager.isProcessing(request.memberId(), request.couponId());
         memberCouponReader.alreadyIssued(request.memberId(), request.couponId());
         Member member = memberReader.getMemberById(request.memberId());
         Coupon coupon = couponReader.getCouponById(request.couponId());
         couponRedisManager.decreaseCount(coupon);
+        coupon.validateIssuable();
+        couponWriter.decreaseAvailableCount(coupon.getId());
+        return memberCouponWriter.save(member, coupon);
+    }
+
+    @Transactional
+    @DistributedLock(key = "'member:' + #request.memberId() + ':coupon:' + #request.couponId()")
+    public MemberCoupon issueForRedisLock(IssueCouponRequest request) {
+        memberCouponReader.alreadyIssued(request.memberId(), request.couponId());
+        Member member = memberReader.getMemberById(request.memberId());
+        Coupon coupon = couponReader.getCouponById(request.couponId());
         coupon.validateIssuable();
         couponWriter.decreaseAvailableCount(coupon.getId());
         return memberCouponWriter.save(member, coupon);
